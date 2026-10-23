@@ -1,9 +1,10 @@
-"""Generate English NML from committed translations; never guess missing names."""
+"""Generate English NML offline, or explicitly refresh CBS candidate data first."""
 from pathlib import Path
 import argparse
 import csv
 import json
 import re
+from cbs_directory import refresh, translations_from_snapshot
 
 BASE = Path(__file__).resolve().parent
 TEXT = re.compile(r'text\("((?:\\.|[^"\\])*)",\s*(\d+)\s*\)')
@@ -42,11 +43,8 @@ def read_mapping(path):
     return result
 
 
-def resolve_translations(cache, overrides, amnon=False):
-    translations = cache | overrides
-    if amnon:
-        translations['אמנון'] = 'Amnon'
-    return translations
+def resolve_translations(cache, overrides):
+    return cache | overrides
 
 
 def generate(source, translations):
@@ -57,38 +55,55 @@ def generate(source, translations):
     missing = [name for name in names if name not in translations]
     if missing:
         raise ValueError(f'{len(missing)} unresolved names; see town_names_review.csv')
+    for name in names:
+        value = translations[name]
+        if not isinstance(value, str) or not value.strip() or HEBREW.search(value) or any(ord(c) < 32 for c in value):
+            raise ValueError(f'Invalid English name for {name!r}')
     original = r'grfid: "ZH\01\01";'
     if source.count(original) != 1:
-        raise ValueError('Expected original GRFID exactly once; inspect source before continuing')
+        raise ValueError('Expected original GRFID exactly once')
     output = TEXT.sub(lambda m: f'text("{encode(translations[decode(m[1])])}", {m[2]})', source)
     output = output.replace(original, r'grfid: "ZH\01\02";', 1)
-    output = re.sub(r'town_names\(real(?=\s*[,\)])', 'town_names(real_english', output)
-    return output
+    return re.sub(r'town_names\(real(?=\s*[,\)])', 'town_names(real_english', output)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--overrides', type=Path, default=BASE / 'english_name_overrides.json')
-    parser.add_argument('--amnon', action='store_true', help='Prefer Amnon to the cached spelling for אמנון')
+    parser.add_argument('--preferences', type=Path, default=BASE / 'display_name_preferences.json')
+    parser.add_argument('--refresh-cbs', action='store_true')
+    parser.add_argument('--cbs-year', type=int)
     args = parser.parse_args()
+    if args.cbs_year and not args.refresh_cbs:
+        parser.error('--cbs-year requires --refresh-cbs')
+    snapshot_path = BASE / 'data' / 'cbs_localities.json'
+    if args.refresh_cbs:
+        refresh(snapshot_path, args.cbs_year)
+    cbs = translations_from_snapshot(snapshot_path)
     cache = read_mapping(BASE / 'english_names_cache.json')
     overrides = read_mapping(args.overrides)
-    translations = resolve_translations(cache, overrides, args.amnon)
+    preferences = read_mapping(args.preferences)
+    translations = cbs | cache | overrides | preferences
     source = (BASE / 'israel.nml').read_text(encoding='utf-8-sig')
     names = list(dict.fromkeys(decode(m[1]) for m in TEXT.finditer(strip_comments(source))))
     with (BASE / 'town_names_review.csv').open('w', encoding='utf-8-sig', newline='') as handle:
         writer = csv.writer(handle)
         writer.writerow(['hebrew', 'english', 'source'])
-        for name in names:
-            origin = 'CLI spelling preference' if args.amnon and name == 'אמנון' else 'manual override' if name in overrides else 'cached label: UNVERIFIED' if name in cache else 'UNRESOLVED'
+        for name in sorted(names, key=lambda n: (translations.get(n, '').casefold(), n)):
+            origin = 'display preference' if name in preferences else 'manual override' if name in overrides else 'cached label: UNVERIFIED' if name in cache else 'CBS exact-name candidate: REVIEW' if name in cbs else 'UNRESOLVED'
             writer.writerow([name, translations.get(name, ''), origin])
-    destination = BASE / 'israel_english.nml'
-    try:
-        output = generate(source, translations)
-    except ValueError as error:
-        raise SystemExit(f'{error}. Output NOT updated; do not compile a stale NML file.') from error
-    destination.write_text(output, encoding='utf-8')
-    print(f'Wrote {destination.name}: {len(names)} unique active names. Review cached labels before release.')
+    if snapshot_path.exists():
+        records = json.loads(snapshot_path.read_text(encoding='utf-8'))['records']
+        existing = set(names)
+        with (BASE / 'data' / 'cbs_candidates.csv').open('w', encoding='utf-8-sig', newline='') as handle:
+            writer = csv.writer(handle)
+            writer.writerow(['id', 'year', 'hebrew', 'english', 'status'])
+            for row in records:
+                if row['name_heb'] not in existing:
+                    writer.writerow([row['id'], row['year'], row['name_heb'], row['name_eng'], 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY'])
+    output = generate(source, translations)
+    (BASE / 'israel_english.nml').write_text(output, encoding='utf-8')
+    print(f'Wrote English NML for {len(names)} unique active names; alphabetical review CSV written. Generation order preserved.')
 
 
 if __name__ == '__main__':

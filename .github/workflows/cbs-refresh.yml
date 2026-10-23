@@ -1,0 +1,38 @@
+name: Review CBS directory updates
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 7 1 * *'
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-build.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python make_english.py --refresh-cbs
+      - run: nmlc -c --lang-dir lang_english --grf israeli_town_names_english.grf israel_english.nml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cbs-review
+          path: |
+            data/
+            town_names_review.csv
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/cbs-directory
+          commit-message: Refresh CBS locality snapshot for review
+          title: Review CBS locality directory changes
+          body: Automated candidate snapshot and change report. Review aliases, eligibility, names and source vintage before merging. No playable localities are automatically added or removed. Token-created PRs may require manual CI dispatch; refresh job already runs tests and compiles English.
+          add-paths: |
+            data/cbs_localities.json
+            data/cbs_changes.md
+            data/cbs_candidates.csv
