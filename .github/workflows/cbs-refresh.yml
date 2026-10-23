@@ -18,7 +18,18 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -r requirements-build.txt
       - run: python -m unittest discover -s tests -v
-      - run: python make_english.py --refresh-cbs
+      - name: Refresh CBS snapshot
+        id: cbs
+        run: python make_english.py --refresh-cbs
+      - name: Diagnose CBS request failures
+        if: failure() && steps.cbs.outcome == 'failure'
+        run: python cbs_http.py 2>&1 | tee cbs-diagnostics.txt
+      - name: Upload CBS diagnostics
+        if: failure() && steps.cbs.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbs-diagnostics
+          path: cbs-diagnostics.txt
       - run: nmlc -c --lang-dir lang_english --grf israeli_town_names_english.grf israel_english.nml
       - uses: actions/upload-artifact@v4
         with:

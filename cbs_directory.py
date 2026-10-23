@@ -2,11 +2,9 @@
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
-from urllib.request import Request, urlopen
 import json
-import time
+from cbs_http import read_json
 
 URL = 'https://api.cbs.gov.il/Dictionary/geo/localities'
 PAGE_SIZE = 250
@@ -16,20 +14,7 @@ def request_page(page, year=None):
     params = {'format': 'json', 'expand': 'false', 'page': page, 'page_size': PAGE_SIZE}
     if year is not None:
         params['year'] = year
-    request = Request(URL + '?' + urlencode(params), headers={'User-Agent': 'OpenTTD-Israeli-Town-Names/1.0 (github.com/maximunited/OpenTTD-Israeli-Town-Names)', 'Accept': 'application/json'})
-    for attempt in range(3):
-        try:
-            with urlopen(request, timeout=30) as response:
-                return json.load(response)
-        except HTTPError as error:
-            if error.code != 429 and error.code < 500:
-                raise
-            if attempt == 2:
-                raise
-        except (URLError, TimeoutError):
-            if attempt == 2:
-                raise
-        time.sleep(2 ** attempt)
+    return read_json(URL + '?' + urlencode(params))
 
 
 def parse_page(payload):
