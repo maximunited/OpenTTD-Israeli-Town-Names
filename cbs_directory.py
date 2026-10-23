@@ -5,6 +5,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 import json
 from cbs_http import read_json
+from cbs_pagination import collect_pages
 
 URL = 'https://api.cbs.gov.il/Dictionary/geo/localities'
 PAGE_SIZE = 250
@@ -46,19 +47,7 @@ def parse_page(payload):
 
 
 def fetch_snapshot(year=None, fetch_page=request_page, minimum_records=500):
-    records, seen = [], set()
-    for page in range(1, 101):
-        batch = parse_page(fetch_page(page, year))
-        for row in batch:
-            key = (row['id'], row['year'])
-            if key in seen:
-                raise ValueError('Duplicate locality/year or repeated page; snapshot rejected')
-            seen.add(key)
-            records.append(row)
-        if not batch:
-            break
-    else:
-        raise ValueError('CBS pagination did not terminate')
+    records = collect_pages(year, fetch_page, parse_page, page_size=PAGE_SIZE)
     if len(records) < minimum_records:
         raise ValueError('Suspiciously small/empty CBS snapshot; previous snapshot retained')
     years = {row['year'] for row in records}
