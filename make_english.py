@@ -84,6 +84,12 @@ def main():
     cache = read_mapping(BASE / 'english_names_cache.json')
     overrides = read_mapping(args.overrides)
     preferences = read_mapping(args.preferences)
+    exclusions_path = BASE / 'data' / 'cbs_exclusions.json'
+    exclusions = (
+        json.loads(exclusions_path.read_text(encoding='utf-8-sig'))
+        if exclusions_path.exists()
+        else {}
+    )
     translations = resolve_mapping(cbs, cache, overrides, preferences)
     source = (BASE / 'israel.nml').read_text(encoding='utf-8-sig')
     names = list(dict.fromkeys(decode(m[1]) for m in TEXT.finditer(strip_comments(source))))
@@ -102,7 +108,12 @@ def main():
             for row in records:
                 if row['name_heb'] not in existing:
                     english = normalize_english_label(row['name_eng']) if row['name_eng'] is not None else ''
-                    writer.writerow([row['id'], row['year'], row['name_heb'], english, classify_candidate(row, existing)])
+                    exclusion = exclusions.get(str(row['id']))
+                    if exclusion:
+                        status = f"EXCLUDED: {exclusion['reason']}"
+                    else:
+                        status = classify_candidate(row, existing)
+                    writer.writerow([row['id'], row['year'], row['name_heb'], english, status])
     output = generate(source, translations)
     (BASE / 'israel_english.nml').write_text(output, encoding='utf-8')
     print(f'Wrote English NML for {len(names)} unique active names; alphabetical review CSV written. Generation order preserved.')
