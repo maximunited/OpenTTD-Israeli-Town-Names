@@ -23,7 +23,7 @@ class ClassificationTests(unittest.TestCase):
         self.assertEqual(classify_candidate(row('בי"ס אזורי מקיף (אשר)'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
 
     def test_district_is_not_a_town(self):
-        self.assertEqual(classify_candidate(row('נפת ג'נין'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
+        self.assertEqual(classify_candidate(row("נפת ג'נין"), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
 
     def test_military_camp_is_not_a_town(self):
         self.assertEqual(classify_candidate(row('מחנה הילה*'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
