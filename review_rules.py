@@ -54,7 +54,5 @@ def resolve_mapping(cbs, cache, overrides, preferences):
         if not isinstance(mapping, dict):
             raise ValueError(f'{layer} mapping must be a dictionary')
         for hebrew, english in mapping.items():
-            if hebrew in result:
-                raise ValueError(f'Duplicate Hebrew mapping across layers: {hebrew!r}')
             result[hebrew] = validate_english_label(english, hebrew)
     return result

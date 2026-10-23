@@ -39,10 +39,6 @@ class MappingTests(unittest.TestCase):
         result = resolve_mapping({'א': 'CBS'}, {'א': 'CACHE'}, {}, {})
         self.assertEqual(result['א'], 'CACHE')
 
-    def test_duplicate_within_merge_rejected(self):
-        with self.assertRaisesRegex(ValueError, 'Duplicate Hebrew mapping'):
-            resolve_mapping({'א': 'CBS'}, {'א': 'CACHE'}, {}, {})
-
     def test_invalid_english_rejected(self):
         with self.assertRaisesRegex(ValueError, 'Hebrew characters'):
             resolve_mapping({'א': 'עברית'}, {}, {}, {})
