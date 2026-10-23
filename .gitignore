@@ -1,2 +1,11 @@
 .*swp
 *.grf
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+english_names_cache.json
+town_names_review.csv
+english_town_names_preview.txt
+unmatched_hebrew_names*.txt
+israel_english.nml
