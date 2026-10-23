@@ -5,6 +5,7 @@ import csv
 import json
 import re
 from cbs_directory import refresh, translations_from_snapshot
+from review_rules import classify_candidate, normalize_english_label, resolve_mapping
 
 BASE = Path(__file__).resolve().parent
 TEXT = re.compile(r'text\("((?:\\.|[^"\\])*)",\s*(\d+)\s*\)')
@@ -22,12 +23,6 @@ def decode(value):
 
 def encode(value):
     return value.replace('\\', '\\\\').replace('"', '\\"')
-
-
-def normalize_english_label(value):
-    if not isinstance(value, str):
-        raise ValueError('English label must be text')
-    return re.sub(r'\s+', ' ', value.strip().strip("'")).strip()
 
 
 def read_mapping(path):
@@ -89,7 +84,7 @@ def main():
     cache = read_mapping(BASE / 'english_names_cache.json')
     overrides = read_mapping(args.overrides)
     preferences = read_mapping(args.preferences)
-    translations = cbs | cache | overrides | preferences
+    translations = resolve_mapping(cbs, cache, overrides, preferences)
     source = (BASE / 'israel.nml').read_text(encoding='utf-8-sig')
     names = list(dict.fromkeys(decode(m[1]) for m in TEXT.finditer(strip_comments(source))))
     with (BASE / 'town_names_review.csv').open('w', encoding='utf-8-sig', newline='') as handle:
@@ -107,7 +102,7 @@ def main():
             for row in records:
                 if row['name_heb'] not in existing:
                     english = normalize_english_label(row['name_eng']) if row['name_eng'] is not None else ''
-                    writer.writerow([row['id'], row['year'], row['name_heb'], english, 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY'])
+                    writer.writerow([row['id'], row['year'], row['name_heb'], english, classify_candidate(row, existing)])
     output = generate(source, translations)
     (BASE / 'israel_english.nml').write_text(output, encoding='utf-8')
     print(f'Wrote English NML for {len(names)} unique active names; alphabetical review CSV written. Generation order preserved.')
