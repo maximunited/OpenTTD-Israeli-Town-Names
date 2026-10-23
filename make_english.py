@@ -24,6 +24,12 @@ def encode(value):
     return value.replace('\\', '\\\\').replace('"', '\\"')
 
 
+def normalize_english_label(value):
+    if not isinstance(value, str):
+        raise ValueError('English label must be text')
+    return re.sub(r'\s+', ' ', value.strip().strip("'")).strip()
+
+
 def read_mapping(path):
     if not path.exists():
         return {}
@@ -79,7 +85,7 @@ def main():
     snapshot_path = BASE / 'data' / 'cbs_localities.json'
     if args.refresh_cbs:
         refresh(snapshot_path, args.cbs_year)
-    cbs = translations_from_snapshot(snapshot_path)
+    cbs = {hebrew: normalize_english_label(english) for hebrew, english in translations_from_snapshot(snapshot_path).items()}
     cache = read_mapping(BASE / 'english_names_cache.json')
     overrides = read_mapping(args.overrides)
     preferences = read_mapping(args.preferences)
@@ -100,7 +106,8 @@ def main():
             writer.writerow(['id', 'year', 'hebrew', 'english', 'status'])
             for row in records:
                 if row['name_heb'] not in existing:
-                    writer.writerow([row['id'], row['year'], row['name_heb'], row['name_eng'], 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY'])
+                    english = normalize_english_label(row['name_eng']) if row['name_eng'] is not None else ''
+                    writer.writerow([row['id'], row['year'], row['name_heb'], english, 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY'])
     output = generate(source, translations)
     (BASE / 'israel_english.nml').write_text(output, encoding='utf-8')
     print(f'Wrote English NML for {len(names)} unique active names; alphabetical review CSV written. Generation order preserved.')
