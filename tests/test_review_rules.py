@@ -22,6 +22,27 @@ class ClassificationTests(unittest.TestCase):
     def test_school_is_not_a_town(self):
         self.assertEqual(classify_candidate(row('בי"ס אזורי מקיף (אשר)'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
 
+    def test_district_is_not_a_town(self):
+        self.assertEqual(classify_candidate(row('נפת ג'נין'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
+
+    def test_military_camp_is_not_a_town(self):
+        self.assertEqual(classify_candidate(row('מחנה הילה*'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
+
+    def test_industrial_park_is_not_a_town(self):
+        self.assertEqual(classify_candidate(row('פארק תעשיות עמק חפר'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
+
+    def test_regional_statistical_area_is_not_a_town(self):
+        self.assertEqual(classify_candidate(row('גמ"ל מחוז דרום'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
+
+    def test_dead_sea_hotels_are_not_a_town(self):
+        self.assertEqual(classify_candidate(row('ים המלח - בתי מלון'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
+
+    def test_trailing_asterisk_is_not_a_town(self):
+        self.assertEqual(classify_candidate(row('אילון תבור*'), set()), 'NOT A TOWN: REVIEW ELIGIBILITY')
+
+    def test_potential_town_stays_for_alias_review(self):
+        self.assertEqual(classify_candidate(row('טובא-זנגרייה'), set()), 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY')
+
     def test_unmatched_settlement_needs_alias_review(self):
         self.assertEqual(classify_candidate(row('תראבין א-צאנע (יישוב)'), set()), 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY')
 
@@ -57,6 +78,13 @@ class LabelTests(unittest.TestCase):
 
     def test_whitespace_normalized(self):
         self.assertEqual(normalize_english_label('  ABU  AMMAR  '), 'ABU AMMAR')
+
+    def test_missing_space_before_parenthesis_added(self):
+        self.assertEqual(normalize_english_label('MERHAVYA(QIBBUZ)'), 'MERHAVYA (QIBBUZ)')
+        self.assertEqual(normalize_english_label("BEN SHEMEN(K.NO'AR)"), "BEN SHEMEN (K.NO'AR)")
+
+    def test_existing_space_before_parenthesis_preserved(self):
+        self.assertEqual(normalize_english_label("TAMRA (YIZRE'EL)"), "TAMRA (YIZRE'EL)")
 
     def test_non_text_rejected(self):
         with self.assertRaises(ValueError):

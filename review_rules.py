@@ -18,13 +18,23 @@ NON_TOWN_MARKERS = (
     'של"ש',
     'קרית תעופה',
     'נמל תעופה',
+    'נפת ',
+    'מחנה ',
+    'פארק תעשיות',
+    'תעשיות ',
+    'קרית חינוך',
+    'ים המלח',
+    'גמ"ל',
+    'מחוז',
+    'סואעד',
 )
 
 
 def normalize_english_label(value):
     if not isinstance(value, str):
         raise ValueError('English label must be text')
-    return re.sub(r'\s+', ' ', value.strip().strip("'")).strip()
+    value = re.sub(r'\s+', ' ', value.strip().strip("'")).strip()
+    return re.sub(r'(?<=\S)\(', ' (', value)
 
 
 def validate_english_label(value, hebrew=None):
@@ -42,7 +52,7 @@ def classify_candidate(row, playable_names):
     hebrew = row['name_heb']
     if hebrew in playable_names:
         return 'EXACT PLAYABLE MATCH'
-    if any(marker in hebrew for marker in NON_TOWN_MARKERS):
+    if hebrew.endswith('*') or any(marker in hebrew for marker in NON_TOWN_MARKERS):
         return 'NOT A TOWN: REVIEW ELIGIBILITY'
     return 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY'
 
