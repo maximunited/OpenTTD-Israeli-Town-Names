@@ -1,823 +1,534 @@
 ﻿hebrew,english,source
-אלעד,El'ad,cached label: review
-נווה זיו,Neve Ziv,cached label: review
-יתיר,Yatir,manual override
-אחוזת ברק,Ahuzat Barak,cached label: review
-באר מילכה,Be'er Milka,cached label: review
-נגוהות,Negohot,manual override
-ברוכין,Brukhin,manual override
-נוף איילון,Nof Ayalon,cached label: review
-שמשית,Shimshit,cached label: review
-כדיתה,Kadita,cached label: review
-אל-עזי,Al-Azi,manual override
-מרחב עם,Merhav Am,cached label: review
-רוח מדבר,Ruah Midbar,cached label: review
-גבעות בר,Giv'ot Bar,cached label: review
-שלומית,Shlumit,cached label: review
-כחלה,Kuhla,manual override
-מצפה אילן,Mitzpe Ilan,cached label: review
-גני טל,Ganei Tal,cached label: review
-נצר חזני,Netzer Hazani,cached label: review
-באר גנים,Be'er Ganim,cached label: review
-חברון,Hebron,manual override
-קציר,Katzir,manual override
-אבירים,Abirim,cached label: review
-אדמית,Adamit,cached label: review
-עדנים,Adanim,cached label: review
-אדרת,Aderet,cached label: review
-אדירים,Adirim,cached label: review
-עדי,Adi,cached label: review
-אדורה,Adora,cached label: review
-אפק,Afek,cached label: review
-אפיק,Afik,cached label: review
+אבירים,Abirim,cached label: UNVERIFIED
+עכו,Acre,cached label: UNVERIFIED
+אדמית,Adamit,cached label: UNVERIFIED
+עדנים,Adanim,cached label: UNVERIFIED
+אדרת,Aderet,cached label: UNVERIFIED
+עדי,Adi,cached label: UNVERIFIED
+אדירים,Adirim,cached label: UNVERIFIED
+אדורה,Adora,cached label: UNVERIFIED
+אפק,Afek,cached label: UNVERIFIED
+אפיק,Afik,cached label: UNVERIFIED
 אפיקים,Afikim,manual override
-עפולה,Afula,cached label: review
-עגור,Agur,cached label: review
-אחווה,Ahva,cached label: review
-אחיעזר,Ahi'ezer,cached label: review
-אחיהוד,Ahihud,cached label: review
-אחיסמך,Ahisamakh,cached label: review
-אחיטוב,Ahituv,cached label: review
-אחוזם,Ahuzam,cached label: review
-עכו,Acre,cached label: review
+עפולה,Afula,cached label: UNVERIFIED
+עגור,Agur,cached label: UNVERIFIED
+אחיעזר,Ahi'ezer,cached label: UNVERIFIED
+אחיהוד,Ahihud,cached label: UNVERIFIED
+אחיסמך,Ahisamakh,cached label: UNVERIFIED
+אחיטוב,Ahituv,cached label: UNVERIFIED
+אחוזם,Ahuzam,cached label: UNVERIFIED
+אחוזת ברק,Ahuzat Barak,cached label: UNVERIFIED
+אחווה,Ahva,cached label: UNVERIFIED
+אל-עזי,Al-Azi,manual override
 עלי זהב,Alei Zahav,manual override
 אלפי מנשה,Alfei Menashe,manual override
-אלון הגליל,Alon HaGalil,cached label: review
-אלון שבות,Alon Shvut,cached label: review
-אלוני אבא,Alonei Abba,cached label: review
-אלוני הבשן,Alonei HaBashan,manual override
-אלוני יצחק,Alonei Yitzhak,cached label: review
-אלונים,Alonim,cached label: review
-עלמה,Alma,cached label: review
-אלמגור,Almagor,cached label: review
+עלמה,Alma,cached label: UNVERIFIED
+אלמגור,Almagor,cached label: UNVERIFIED
 אלמוג,Almog,manual override
 עלמון,Almon,manual override
-עלומים,Alumim,cached label: review
-אלומה,Aluma,cached label: review
-אלומות,Alumot,cached label: review
-אמציה,Amazia,cached label: review
-עמיר,Amir,cached label: review
-אמירים,Amirim,cached label: review
-עמיעד,Ami'ad,cached label: review
-עמיעוז,Ami'oz,cached label: review
-עמינדב,Aminadav,cached label: review
-עמיקם,Amikam,cached label: review
-אמנון,Amnon,manual override
-עמקה,Amka,cached label: review
-עמוקה,Amuka,cached label: review
+אלון הגליל,Alon HaGalil,cached label: UNVERIFIED
+אלון שבות,Alon Shvut,cached label: UNVERIFIED
+אלוני אבא,Alonei Abba,cached label: UNVERIFIED
+אלוני הבשן,Alonei HaBashan,manual override
+אלוני יצחק,Alonei Yitzhak,cached label: UNVERIFIED
+אלונים,Alonim,cached label: UNVERIFIED
+אלומה,Aluma,cached label: UNVERIFIED
+עלומים,Alumim,cached label: UNVERIFIED
+אלומות,Alumot,cached label: UNVERIFIED
+אמציה,Amazia,cached label: UNVERIFIED
+עמיעד,Ami'ad,cached label: UNVERIFIED
+עמיעוז,Ami'oz,cached label: UNVERIFIED
+עמיחי,Amichai,cached label: UNVERIFIED
+עמיקם,Amikam,cached label: UNVERIFIED
+עמינדב,Aminadav,cached label: UNVERIFIED
+עמיר,Amir,cached label: UNVERIFIED
+אמירים,Amirim,cached label: UNVERIFIED
+עמקה,Amka,cached label: UNVERIFIED
+אמנון,Amnon,display preference
+עמוקה,Amuka,cached label: UNVERIFIED
 אניעם,Aniam,manual override
-ערד,Arad,cached label: review
-ארבל,Arbel,cached label: review
+ערד,Arad,cached label: UNVERIFIED
+ארבל,Arbel,cached label: UNVERIFIED
 ארגמן,Argaman,manual override
-אריאל,Ariel,cached label: review
-ארסוף,Arsuf,cached label: review
-ערוגות,Arugot,cached label: review
-עשרת,Aseret,cached label: review
-אשדוד,Ashdod,cached label: review
+אריאל,Ariel,cached label: UNVERIFIED
+ארסוף,Arsuf,cached label: UNVERIFIED
+ערוגות,Arugot,cached label: UNVERIFIED
+עשרת,Aseret,cached label: UNVERIFIED
+אשדוד,Ashdod,cached label: UNVERIFIED
 אשדות יעקב (איחוד),Ashdot Ya'akov (Ihud),manual override
 אשדות יעקב (מאוחד),Ashdot Ya'akov (Meuhad),manual override
-אשרת,Oshrat,cached label: review
 אשקלון,Ashkelon,manual override
 עטרת,Ateret,manual override
-עתלית,Atlit,cached label: review
-עבדון,Avdon,cached label: review
+אתגר,Atgar,manual override
+עתלית,Atlit,cached label: UNVERIFIED
+עבדון,Avdon,cached label: UNVERIFIED
+אביאל,Aviel,cached label: UNVERIFIED
+אביעזר,Aviezer,cached label: UNVERIFIED
+אביגדור,Avigdor,cached label: UNVERIFIED
+אביחיל,Avihayil,cached label: UNVERIFIED
+אביטל,Avital,cached label: UNVERIFIED
+אביבים,Avivim,cached label: UNVERIFIED
 אבנת,Avnat,manual override
-אביאל,Aviel,cached label: review
-אביעזר,Aviezer,cached label: review
-אביגדור,Avigdor,cached label: review
-אביחיל,Avihayil,cached label: review
-אביטל,Avital,cached label: review
-אביבים,Avivim,cached label: review
 אבני איתן,Avnei Eitan,manual override
-אבני חפץ,Avnei Hefetz,cached label: review
-אבשלום,Avshalom,cached label: review
-אבטליון,Avtalion,cached label: review
-עיינות,Ayanot,cached label: review
-איילת השחר,Ayelet HaShahar,cached label: review
-עזריה,Azaria,cached label: review
-אזור,Azor,cached label: review
-עזריאל,Azri'el,cached label: review
-עזריקם,Azrikam,cached label: review
-בחן,Bahan,cached label: review
-בלפוריה,Balfouria,cached label: review
-בר גיורא,Bar Giora,cached label: review
-בר יוחאי,Bar Yohai,cached label: review
-ברעם,Bar'am,cached label: review
-ברק,Barak,cached label: review
-ברקת,Bareket,cached label: review
-ברקן,Barkan,cached label: review
-ברקאי,Barkai,cached label: review
+אבני חפץ,Avnei Hefetz,cached label: UNVERIFIED
+אבשלום,Avshalom,cached label: UNVERIFIED
+אבטליון,Avtalion,cached label: UNVERIFIED
+עיינות,Ayanot,cached label: UNVERIFIED
+איילת השחר,Ayelet HaShahar,cached label: UNVERIFIED
+עזריה,Azaria,cached label: UNVERIFIED
+אזור,Azor,cached label: UNVERIFIED
+עזריאל,Azri'el,cached label: UNVERIFIED
+עזריקם,Azrikam,cached label: UNVERIFIED
+בחן,Bahan,cached label: UNVERIFIED
+בלפוריה,Balfouria,cached label: UNVERIFIED
+בר גיורא,Bar Giora,cached label: UNVERIFIED
+בר יוחאי,Bar Yohai,cached label: UNVERIFIED
+ברעם,Bar'am,cached label: UNVERIFIED
+ברק,Barak,cached label: UNVERIFIED
+ברקת,Bareket,cached label: UNVERIFIED
+ברקאי,Barkai,cached label: UNVERIFIED
+ברקן,Barkan,cached label: UNVERIFIED
 "בסמ""ה",Basma,manual override
-בסמת טבעון,Basmat Tab'un,cached label: review
-בת עין,Bat Ayin,cached label: review
-בת הדר,Bat Hadar,cached label: review
+בסמת טבעון,Basmat Tab'un,cached label: UNVERIFIED
+בת עין,Bat Ayin,cached label: UNVERIFIED
+בת הדר,Bat Hadar,cached label: UNVERIFIED
 בת חצור,Bat Hatzor,manual override
-בת חפר,Bat Hefer,cached label: review
-בת חן,Bat Hen,cached label: review
-בת שלמה,Bat Shlomo,cached label: review
-בת ים,Bat Yam,cached label: review
-בצרה,Batzra,cached label: review
-באר אורה,Be'er Ora,cached label: review
-באר שבע,Beersheba,cached label: review
-באר טוביה,Be'er Tuvia,cached label: review
-באר יעקב,Be'er Ya'akov,cached label: review
-בארי,Be'eri,cached label: review
-בארות יצחק,Be'erot Yitzhak,cached label: review
-בארותיים,Be'erotayim,cached label: review
-בית ג'ן,Beit Jann,manual override
-בן עמי,Ben Ami,cached label: review
-בן שמן,Ben Shemen,cached label: review
-בן זכאי,Ben Zakai,cached label: review
-בניה,Bnaya,cached label: review
-בני עטרות,Bnei Atarot,cached label: review
-"בני עי""ש",Bnei Ayish,manual override
-בני ברק,Bnei Brak,cached label: review
-בני דרום,Bnei Darom,cached label: review
-בני דרור,Bnei Dror,cached label: review
-בני נצרים,Bnei Netzarim,cached label: review
-בני ראם,Bnei Re'em,cached label: review
-בני יהודה,Bnei Yehuda,manual override
-בני ציון,Bnei Zion,cached label: review
-בקעות,Beka'ot,manual override
-בקוע,Beko'a,cached label: review
-ברכה,Brakha,manual override
-ברכיה,Berekhya,cached label: review
-ברור חיל,Bror Hayil,cached label: review
-ברוש,Brosh,cached label: review
-בית אלפא,Beit Alfa,cached label: review
-בית אריה,Bet Arye,cached label: review
-בית ברל,Beit Berl,cached label: review
-בית דגן,Beit Dagan,cached label: review
+בת חפר,Bat Hefer,cached label: UNVERIFIED
+בת חן,Bat Hen,cached label: UNVERIFIED
+בת שלמה,Bat Shlomo,cached label: UNVERIFIED
+בת ים,Bat Yam,cached label: UNVERIFIED
+בצרה,Batzra,cached label: UNVERIFIED
+באר גנים,Be'er Ganim,cached label: UNVERIFIED
+באר מילכה,Be'er Milka,cached label: UNVERIFIED
+באר אורה,Be'er Ora,cached label: UNVERIFIED
+באר טוביה,Be'er Tuvia,cached label: UNVERIFIED
+באר יעקב,Be'er Ya'akov,cached label: UNVERIFIED
+בארי,Be'eri,cached label: UNVERIFIED
+בארות יצחק,Be'erot Yitzhak,cached label: UNVERIFIED
+בארותיים,Be'erotayim,cached label: UNVERIFIED
+באר שבע,Beersheba,cached label: UNVERIFIED
+בית אלפא,Beit Alfa,cached label: UNVERIFIED
+בית ברל,Beit Berl,cached label: UNVERIFIED
+בית דגן,Beit Dagan,cached label: UNVERIFIED
 בית אל,Beit El,manual override
-בית אלעזרי,Beit Elazari,cached label: review
-בית עזרא,Beit Ezra,cached label: review
-בית גמליאל,Beit Gamliel,cached label: review
-בית גוברין,Beit Guvrin,cached label: review
+בית אלעזרי,Beit Elazari,cached label: UNVERIFIED
+בית עזרא,Beit Ezra,cached label: UNVERIFIED
+בית גמליאל,Beit Gamliel,cached label: UNVERIFIED
+בית גוברין,Beit Guvrin,cached label: UNVERIFIED
 בית הערבה,Beit HaArava,manual override
-בית העמק,Beit HaEmek,cached label: review
-בית הגדי,Beit HaGadi,cached label: review
-בית הלוי,Beit HaLevi,cached label: review
+בית העמק,Beit HaEmek,cached label: UNVERIFIED
+בית הגדי,Beit HaGadi,cached label: UNVERIFIED
+בית הלוי,Beit HaLevi,cached label: UNVERIFIED
 בית חנן,Beit Hanan,manual override
-בית חנניה,Beit Hanania,cached label: review
-בית השיטה,Beit HaShita,cached label: review
-בית חשמונאי,Beit Hashmonay,cached label: review
+בית חנניה,Beit Hanania,cached label: UNVERIFIED
+בית השיטה,Beit HaShita,cached label: UNVERIFIED
+בית חשמונאי,Beit Hashmonay,cached label: UNVERIFIED
 בית חירות,Beit Herut,manual override
-בית הלל,Beit Hillel,cached label: review
-בית חלקיה,Beit Hilkia,cached label: review
+בית חלקיה,Beit Hilkia,cached label: UNVERIFIED
+בית הלל,Beit Hillel,cached label: UNVERIFIED
 בית חורון,Beit Horon,manual override
+בית ג'ן,Beit Jann,manual override
+בית קמה,Beit Kama,cached label: UNVERIFIED
+בית קשת,Beit Keshet,cached label: UNVERIFIED
 בית לחם הגלילית,Beit Lehem HaGlilit,manual override
-בית מאיר,Beit Meir,cached label: review
-בית נחמיה,Beit Nehemia,cached label: review
-בית נקופה,Beit Nekofa,cached label: review
-בית ניר,Beit Nir,cached label: review
-בית אורן,Beit Oren,cached label: review
-בית עובד,Beit Oved,cached label: review
-בית קמה,Beit Kama,cached label: review
-בית קשת,Beit Keshet,cached label: review
+בית מאיר,Beit Meir,cached label: UNVERIFIED
+בית נחמיה,Beit Nehemia,cached label: UNVERIFIED
+בית נקופה,Beit Nekofa,cached label: UNVERIFIED
+בית ניר,Beit Nir,cached label: UNVERIFIED
+בית אורן,Beit Oren,cached label: UNVERIFIED
+בית עובד,Beit Oved,cached label: UNVERIFIED
 בית רבן,Beit Rabban,manual override
-בית רימון,Beit Rimon,cached label: review
-בית שאן,Beit She'an,cached label: review
-בית שערים,Beit Shearim,cached label: review
-בית שמש,Beit Shemesh,cached label: review
-בית שקמה,Beit Shikma,cached label: review
-בית עוזיאל,Beit Uziel,cached label: review
-בית ינאי,Beit Yanai,cached label: review
-בית יהושע,Beit Yehoshua,cached label: review
-בית יצחק-שער חפר,Beit Yitzhak-Sha'ar Hefer,cached label: review
-בית יוסף,Beit Yosef,cached label: review
-בית זית,Beit Zayit,cached label: review
+בית רימון,Beit Rimon,cached label: UNVERIFIED
+בית שאן,Beit She'an,cached label: UNVERIFIED
+בית שערים,Beit Shearim,cached label: UNVERIFIED
+בית שמש,Beit Shemesh,cached label: UNVERIFIED
+בית שקמה,Beit Shikma,cached label: UNVERIFIED
+בית עוזיאל,Beit Uziel,cached label: UNVERIFIED
+בית ינאי,Beit Yanai,cached label: UNVERIFIED
+בית יהושע,Beit Yehoshua,cached label: UNVERIFIED
+בית יצחק-שער חפר,Beit Yitzhak-Sha'ar Hefer,cached label: UNVERIFIED
+בית יוסף,Beit Yosef,cached label: UNVERIFIED
 בית זיד,Beit Zaid,manual override
-בית זרע,Beit Zera,cached label: review
-בית צבי,Beit Zvi,cached label: review
+בית זית,Beit Zayit,cached label: UNVERIFIED
+בית זרע,Beit Zera,cached label: UNVERIFIED
+בית צבי,Beit Zvi,cached label: UNVERIFIED
 ביתר עילית,Beitar Illit,manual override
-בצת,Betzet,cached label: review
-בענה,Bi'ina,cached label: review
-בנימינה-גבעת עדה,Binyamina-Giv'at Ada,cached label: review
-ביריה,Birya,cached label: review
-ביתן אהרן,Bitan Aharon,cached label: review
+בקעות,Beka'ot,manual override
+בקוע,Beko'a,cached label: UNVERIFIED
+בן עמי,Ben Ami,cached label: UNVERIFIED
+בן שמן,Ben Shemen,cached label: UNVERIFIED
+בן זכאי,Ben Zakai,cached label: UNVERIFIED
+ברכיה,Berekhya,cached label: UNVERIFIED
+בית אריה,Bet Arye,cached label: UNVERIFIED
+בצת,Betzet,cached label: UNVERIFIED
+בענה,Bi'ina,cached label: UNVERIFIED
+בנימינה-גבעת עדה,Binyamina-Giv'at Ada,cached label: UNVERIFIED
+ביריה,Birya,cached label: UNVERIFIED
+ביתן אהרן,Bitan Aharon,cached label: UNVERIFIED
 בטחה,Bitha,manual override
-ביצרון,Bitzaron,cached label: review
-בני דקלים,Bnei Dekalim,cached label: review
-בוסתן הגליל,Bustan HaGalil,cached label: review
+ביצרון,Bitzaron,cached label: UNVERIFIED
+בניה,Bnaya,cached label: UNVERIFIED
+בני עטרות,Bnei Atarot,cached label: UNVERIFIED
+"בני עי""ש",Bnei Ayish,manual override
+בני ברק,Bnei Brak,cached label: UNVERIFIED
+בני דרום,Bnei Darom,cached label: UNVERIFIED
+בני דקלים,Bnei Dekalim,cached label: UNVERIFIED
+בני דרור,Bnei Dror,cached label: UNVERIFIED
+בני נצרים,Bnei Netzarim,cached label: UNVERIFIED
+בני ראם,Bnei Re'em,cached label: UNVERIFIED
+בני יהודה,Bnei Yehuda,manual override
+בני ציון,Bnei Zion,cached label: UNVERIFIED
+ברכה,Brakha,manual override
+ברור חיל,Bror Hayil,cached label: UNVERIFIED
+ברוש,Brosh,cached label: UNVERIFIED
+ברוכין,Brukhin,manual override
+בוסתן הגליל,Bustan HaGalil,cached label: UNVERIFIED
+קיסריה,Caesarea,cached label: UNVERIFIED
+כרמל,Carmel,cached label: UNVERIFIED
 דבוריה,Dabburiyya,manual override
-דפנה,Dafna,cached label: review
-דחי,Ed Dahi,cached label: review
-דליה,Dalia,cached label: review
-דלתון,Dalton,cached label: review
-דן,Dan,cached label: review
-דברת,Dovrat,cached label: review
+דפנה,Dafna,cached label: UNVERIFIED
+דליה,Dalia,cached label: UNVERIFIED
+דלתון,Dalton,cached label: UNVERIFIED
+דן,Dan,cached label: UNVERIFIED
 דגניה א',Degania Alef,manual override
 דגניה ב',Degania Bet,manual override
-דקל,Dekel,cached label: review
-דבירה,Dvira,manual override
-דבורה,Dvora,cached label: review
-דימונה,Dimona,cached label: review
-דישון,Dishon,cached label: review
-דולב,Dolev,cached label: review
-דור,Dor,cached label: review
-דורות,Dorot,cached label: review
+דקל,Dekel,cached label: UNVERIFIED
+דימונה,Dimona,cached label: UNVERIFIED
+דישון,Dishon,cached label: UNVERIFIED
+דולב,Dolev,cached label: UNVERIFIED
+דור,Dor,cached label: UNVERIFIED
+דורות,Dorot,cached label: UNVERIFIED
 "דוב""ב",Dovev,manual override
+דברת,Dovrat,cached label: UNVERIFIED
+דבירה,Dvira,manual override
+דבורה,Dvora,cached label: UNVERIFIED
+דחי,Ed Dahi,cached label: UNVERIFIED
 אפרת,Efrat,manual override
-אלעזר,Elazar,cached label: review
-אל-רום,El-Rom,manual override
-אילת,Eilat,cached label: review
-עלי,Eli,cached label: review
-אלי-עד,Eli-ad,cached label: review
-אליפז,Elifaz,cached label: review
-אליפלט,Elifelet,cached label: review
-אלישמע,Elishama,cached label: review
-אילון,Eilon,cached label: review
-אלון מורה,Elon Moreh,manual override
-אילות,Eilot,cached label: review
-אלקנה,Elkana,manual override
-אלקוש,Elkosh,cached label: review
-אליכין,Elyakhin,cached label: review
-אליקים,Eliakim,cached label: review
-אלישיב,Elyashiv,cached label: review
-אמונים,Emunim,cached label: review
+אילת,Eilat,cached label: UNVERIFIED
+אילון,Eilon,cached label: UNVERIFIED
+אילות,Eilot,cached label: UNVERIFIED
 עין איילה,Ein Ayala,manual override
+עין כרמל,Ein Carmel,cached label: UNVERIFIED
 עין דור,Ein Dor,manual override
-עין גדי,Ein Gedi,cached label: review
-עין גב,Ein Gev,cached label: review
-עין הבשור,Ein HaBesor,cached label: review
-עין העמק,Ein HaEmek,cached label: review
-עין החורש,Ein HaHoresh,cached label: review
-עין המפרץ,Ein HaMifratz,cached label: review
+עין גדי,Ein Gedi,cached label: UNVERIFIED
+עין גב,Ein Gev,cached label: UNVERIFIED
+עין הבשור,Ein HaBesor,cached label: UNVERIFIED
+עין העמק,Ein HaEmek,cached label: UNVERIFIED
+עין החורש,Ein HaHoresh,cached label: UNVERIFIED
+עין המפרץ,Ein HaMifratz,cached label: UNVERIFIED
 "עין הנצי""ב",Ein HaNatziv,manual override
 עין חרוד (איחוד),Ein Harod (Ihud),manual override
 עין חרוד (מאוחד),Ein Harod (Meuhad),manual override
-עין השלושה,Ein HaShlosha,cached label: review
-עין השופט,Ein HaShofet,cached label: review
-עין חצבה,Ein Hatzeva,cached label: review
-עין הוד,Ein Hod,cached label: review
-עין עירון,Ein Iron,cached label: review
-עין כרמל,Ein Carmel,cached label: review
-עין שריד,Ein Sarid,cached label: review
-עין שמר,Ein Shemer,cached label: review
-עין תמר,Ein Tamar,cached label: review
-עין ורד,Ein Vered,cached label: review
-עין יעקב,Ein Ya'akov,cached label: review
-עין יהב,Ein Yahav,cached label: review
+עין השלושה,Ein HaShlosha,cached label: UNVERIFIED
+עין השופט,Ein HaShofet,cached label: UNVERIFIED
+עין חצבה,Ein Hatzeva,cached label: UNVERIFIED
+עין הוד,Ein Hod,cached label: UNVERIFIED
+עין עירון,Ein Iron,cached label: UNVERIFIED
+עין שריד,Ein Sarid,cached label: UNVERIFIED
+עין שמר,Ein Shemer,cached label: UNVERIFIED
+עין תמר,Ein Tamar,cached label: UNVERIFIED
+עין צורים,Ein Tzurim,cached label: UNVERIFIED
+עין ורד,Ein Vered,cached label: UNVERIFIED
+עין יעקב,Ein Ya'akov,cached label: UNVERIFIED
+עין יהב,Ein Yahav,cached label: UNVERIFIED
 עין זיוון,Ein Zivan,manual override
-עין צורים,Ein Tzurim,cached label: review
-עינת,Einat,cached label: review
-ענב,Enav,manual override
-ארז,Erez,cached label: review
-אשבול,Eshbol,cached label: review
-אשל הנשיא,Eshel HaNasi,cached label: review
-אשחר,Eshhar,cached label: review
-אשכולות,Eshkolot,manual override
-אשתאול,Eshtaol,cached label: review
-איתן,Eitan,cached label: review
+עינת,Einat,cached label: UNVERIFIED
+איתן,Eitan,cached label: UNVERIFIED
 איתנים,Eitanim,manual override
-אתגר,Atgar,manual override
-אבן מנחם,Even Menachem,cached label: review
-אבן ספיר,Even Sapir,cached label: review
-אבן שמואל,Even Shmuel,cached label: review
-אבן יהודה,Even Yehuda,cached label: review
-גלעד (אבן יצחק),Galed (Even Yitzhak),manual override
-עברון,Evron,cached label: review
-אייל,Eyal,cached label: review
+אלעד,El'ad,cached label: UNVERIFIED
+אל-רום,El-Rom,manual override
+אלעזר,Elazar,cached label: UNVERIFIED
+עלי,Eli,cached label: UNVERIFIED
+אלי-עד,Eli-ad,cached label: UNVERIFIED
+אליקים,Eliakim,cached label: UNVERIFIED
+אליאב,Eliav,cached label: UNVERIFIED
+אליפז,Elifaz,cached label: UNVERIFIED
+אליפלט,Elifelet,cached label: UNVERIFIED
+אלישמע,Elishama,cached label: UNVERIFIED
+אלקנה,Elkana,manual override
+אלקוש,Elkosh,cached label: UNVERIFIED
+אלון מורה,Elon Moreh,manual override
+אליכין,Elyakhin,cached label: UNVERIFIED
+אלישיב,Elyashiv,cached label: UNVERIFIED
+אמונים,Emunim,cached label: UNVERIFIED
+ענב,Enav,manual override
+ארז,Erez,cached label: UNVERIFIED
+אשבל,Eshbal,cached label: UNVERIFIED
+אשבול,Eshbol,cached label: UNVERIFIED
+אשל הנשיא,Eshel HaNasi,cached label: UNVERIFIED
+אשחר,Eshhar,cached label: UNVERIFIED
+אשכולות,Eshkolot,manual override
+אשתאול,Eshtaol,cached label: UNVERIFIED
 עץ אפרים,Etz Efraim,manual override
-עזר,Ezer,cached label: review
-עזוז,Ezuz,cached label: review
-געש,Ga'ash,cached label: review
-געתון,Ga'aton,cached label: review
-גדיש,Gadish,cached label: review
-גדות,Gadot,cached label: review
-גלאון,Gal On,cached label: review
-גן הדרום,Gan HaDarom,cached label: review
-גן השומרון,Gan HaShomron,cached label: review
-גן חיים,Gan Haim,cached label: review
-גן נר,Gan Ner,cached label: review
+אבן מנחם,Even Menachem,cached label: UNVERIFIED
+אבן ספיר,Even Sapir,cached label: UNVERIFIED
+אבן שמואל,Even Shmuel,cached label: UNVERIFIED
+אבן יהודה,Even Yehuda,cached label: UNVERIFIED
+עברון,Evron,cached label: UNVERIFIED
+אייל,Eyal,cached label: UNVERIFIED
+עזר,Ezer,cached label: UNVERIFIED
+עזוז,Ezuz,cached label: UNVERIFIED
+געש,Ga'ash,cached label: UNVERIFIED
+געתון,Ga'aton,cached label: UNVERIFIED
+גדיש,Gadish,cached label: UNVERIFIED
+גדות,Gadot,cached label: UNVERIFIED
+גלאון,Gal On,cached label: UNVERIFIED
+גלעד (אבן יצחק),Galed (Even Yitzhak),manual override
+גן הדרום,Gan HaDarom,cached label: UNVERIFIED
+גן חיים,Gan Haim,cached label: UNVERIFIED
+גן השומרון,Gan HaShomron,cached label: UNVERIFIED
+גן נר,Gan Ner,cached label: UNVERIFIED
+גן שמואל,Gan Samuel,cached label: UNVERIFIED
 גן שלמה,Gan Shlomo,manual override
-גן שמואל,Gan Samuel,cached label: review
-גן שורק,Gan Sorek,cached label: review
-גן יבנה,Gan-Yavne,cached label: review
-גן יאשיה,Gan Yoshiya,cached label: review
-גני עם,Ganei Am,cached label: review
-גני הדר,Ganei Hadar,cached label: review
-גני תקווה,Ganei Tikva,cached label: review
-גני יוחנן,Ganei Yohanan,cached label: review
-גנות,Ganot,cached label: review
-גנות הדר,Ganot Hadar,cached label: review
-גת רימון,Gat Rimon,cached label: review
+גן שורק,Gan Sorek,cached label: UNVERIFIED
+גן יאשיה,Gan Yoshiya,cached label: UNVERIFIED
+גן יבנה,Gan-Yavne,cached label: UNVERIFIED
+גני עם,Ganei Am,cached label: UNVERIFIED
+גני הדר,Ganei Hadar,cached label: UNVERIFIED
+גני מודיעין,Ganei Modi'in,cached label: UNVERIFIED
+גני טל,Ganei Tal,cached label: UNVERIFIED
+גני תקווה,Ganei Tikva,cached label: UNVERIFIED
+גני יוחנן,Ganei Yohanan,cached label: UNVERIFIED
+גנות,Ganot,cached label: UNVERIFIED
+גנות הדר,Ganot Hadar,cached label: UNVERIFIED
 גת (קיבוץ),Gat (Kibbutz),manual override
-גזית,Gazit,cached label: review
-גיאה,Ge'a,cached label: review
-גאליה,Ge'alya,cached label: review
-גאולי תימן,Geulei Teiman,cached label: review
-גאולים,Geulim,cached label: review
-גדרה,Gedera,cached label: review
-גפן,Gefen,cached label: review
-גליל ים,Glil Yam,cached label: review
-גרופית,Grofit,cached label: review
-גשר,Gesher,cached label: review
-גשר הזיו,Gesher HaZiv,cached label: review
+גת רימון,Gat Rimon,cached label: UNVERIFIED
+גזית,Gazit,cached label: UNVERIFIED
+גיאה,Ge'a,cached label: UNVERIFIED
+גאליה,Ge'alya,cached label: UNVERIFIED
+גדרה,Gedera,cached label: UNVERIFIED
+גפן,Gefen,cached label: UNVERIFIED
+גשר,Gesher,cached label: UNVERIFIED
+גשר הזיו,Gesher HaZiv,cached label: UNVERIFIED
 גשור,Geshur,manual override
-גבע,Geva,cached label: review
-גבע כרמל,Geva Carmel,cached label: review
-גבע בנימין,Geva Binyamin,cached label: review
-גברעם,Gvar'am,cached label: review
-גבת,Gvat,cached label: review
-גבים,Gevim,cached label: review
-גבולות,Gvulot,cached label: review
-גזר,Gezer,cached label: review
+גאולי תימן,Geulei Teiman,cached label: UNVERIFIED
+גאולים,Geulim,cached label: UNVERIFIED
+גבע,Geva,cached label: UNVERIFIED
+גבע בנימין,Geva Binyamin,cached label: UNVERIFIED
+גבע כרמל,Geva Carmel,cached label: UNVERIFIED
+גבים,Gevim,cached label: UNVERIFIED
+גזר,Gezer,cached label: UNVERIFIED
 גיבתון,Gibton,manual override
-גדעונה,Gidona,cached label: review
-גילת,Gilat,cached label: review
+גדעונה,Gidona,cached label: UNVERIFIED
+גילת,Gilat,cached label: UNVERIFIED
 גלגל,Gilgal,manual override
-גילון,Gilon,cached label: review
-גמזו,Gimzo,cached label: review
-גינתון,Ginnaton,manual override
+גילון,Gilon,cached label: UNVERIFIED
+גמזו,Gimzo,cached label: UNVERIFIED
 גיניגר,Ginegar,manual override
-גינוסר,Ginosar,cached label: review
-גיתה,Gita,cached label: review
+גינתון,Ginnaton,manual override
+גינוסר,Ginosar,cached label: UNVERIFIED
+גיתה,Gita,cached label: UNVERIFIED
 גיתית,Gitit,manual override
-גבעת אבני,Giv'at Avni,cached label: review
-גבעת ברנר,Givat Brenner,cached label: review
-גבעת אלה,Givat Ela,cached label: review
-גבעת השלושה,Givat HaShlosha,cached label: review
+גבעת אבני,Giv'at Avni,cached label: UNVERIFIED
+גבעת שמואל,Giv'at Shmuel,cached label: UNVERIFIED
+גבעת יערים,Giv'at Ye'arim,cached label: UNVERIFIED
+גבעת זאב,Giv'at Ze'ev,cached label: UNVERIFIED
+גבעתי,Giv'ati,cached label: UNVERIFIED
+גבעון החדשה,Giv'on HaHadasha,manual override
+גבעות בר,Giv'ot Bar,cached label: UNVERIFIED
+גבעת ברנר,Givat Brenner,cached label: UNVERIFIED
+גבעת אלה,Givat Ela,cached label: UNVERIFIED
 גבעת חיים (איחוד),Givat Haim (Ihud),manual override
 גבעת חיים (מאוחד),Givat Haim (Meuhad),manual override
+גבעת השלושה,Givat HaShlosha,cached label: UNVERIFIED
 "גבעת ח""ן",Givat Hen,manual override
 "גבעת כ""ח",Givat Koah,manual override
 "גבעת ניל""י",Givat Nili,manual override
-גבעת עוז,Givat Oz,cached label: review
-גבעת שפירא,Givat Shapira,cached label: review
-גבעת שמש,Givat Shemesh,cached label: review
-גבעת שמואל,Giv'at Shmuel,cached label: review
-גבעת יערים,Giv'at Ye'arim,cached label: review
-גבעת ישעיהו,Givat Yeshayahu,cached label: review
+גבעת עוז,Givat Oz,cached label: UNVERIFIED
+גבעת שפירא,Givat Shapira,cached label: UNVERIFIED
+גבעת שמש,Givat Shemesh,cached label: UNVERIFIED
+גבעת ישעיהו,Givat Yeshayahu,cached label: UNVERIFIED
 גבעת יואב,Givat Yoav,manual override
-גבעת זאב,Giv'at Ze'ev,cached label: review
-גבעתיים,Givatayim,cached label: review
-גבעתי,Giv'ati,cached label: review
-גבעולים,Givolim,cached label: review
-גבעון החדשה,Giv'on HaHadasha,manual override
-גיזו,Gizo,cached label: review
-גונן,Gonen,cached label: review
-גורן,Goren,cached label: review
-גורנות הגליל,Gornot HaGalil,cached label: review
-הבונים,HaBonim,cached label: review
+גבעתיים,Givatayim,cached label: UNVERIFIED
+גבעולים,Givolim,cached label: UNVERIFIED
+גיזו,Gizo,cached label: UNVERIFIED
+גליל ים,Glil Yam,cached label: UNVERIFIED
+גונן,Gonen,cached label: UNVERIFIED
+גורן,Goren,cached label: UNVERIFIED
+גורנות הגליל,Gornot HaGalil,cached label: UNVERIFIED
+גרופית,Grofit,cached label: UNVERIFIED
+גברעם,Gvar'am,cached label: UNVERIFIED
+גבת,Gvat,cached label: UNVERIFIED
+גבולות,Gvulot,cached label: UNVERIFIED
+הבונים,HaBonim,cached label: UNVERIFIED
 חד-נס,Had Nes,manual override
-הדר עם,Hadar Am,cached label: review
-חדרה,Hadera,cached label: review
-חדיד,Hadid,cached label: review
-חפץ חיים,Hafetz Haim,cached label: review
+הדר עם,Hadar Am,cached label: UNVERIFIED
+חדרה,Hadera,cached label: UNVERIFIED
+חדיד,Hadid,cached label: UNVERIFIED
+חפץ חיים,Hafetz Haim,cached label: UNVERIFIED
 חגי,Hagai,manual override
-חגור,Hagor,cached label: review
-הגושרים,HaGoshrim,cached label: review
-החותרים,Hahotrim,cached label: review
-חיפה,Haifa,cached label: review
-נוה צוף,Neve Tzuf,manual override
+חגור,Hagor,cached label: UNVERIFIED
+הגושרים,HaGoshrim,cached label: UNVERIFIED
+החותרים,Hahotrim,cached label: UNVERIFIED
+חיפה,Haifa,cached label: UNVERIFIED
 חלוץ,Halutz,manual override
-המעפיל,HaMa'apil,cached label: review
-חמדיה,Hamadia,cached label: review
+המעפיל,HaMa'apil,cached label: UNVERIFIED
+חמדיה,Hamadia,cached label: UNVERIFIED
 חמרה,Hamra,manual override
-חניתה,Hanita,cached label: review
-חנתון,Hanaton,cached label: review
-חניאל,Haniel,cached label: review
-העוגן,HaOgen,cached label: review
-האון,HaOn,cached label: review
+חנתון,Hanaton,cached label: UNVERIFIED
+חניאל,Haniel,cached label: UNVERIFIED
+חניתה,Hanita,cached label: UNVERIFIED
+העוגן,HaOgen,cached label: UNVERIFIED
+האון,HaOn,cached label: UNVERIFIED
 הר אדר,Har Adar,manual override
-הר עמשא,Har Amasa,cached label: review
+הר עמשא,Har Amasa,cached label: UNVERIFIED
 הר גילה,Har Gilo,manual override
-הראל,Harel,cached label: review
-הררית,Hararit,cached label: review
-חרשים,Harashim,cached label: review
-הרדוף,Harduf,cached label: review
-חריש,Harish,cached label: review
-חרוצים,Harutzim,cached label: review
-חשמונאים,Hashmonaim,cached label: review
-הסוללים,Hasolelim,cached label: review
-חספין,Hispin,manual override
-חבצלת השרון,Havatzelet HaSharon,cached label: review
-הוואשלה (שבט),Hawashla (Tribe),manual override
-היוגב,HaYogev,cached label: review
+הררית,Hararit,cached label: UNVERIFIED
+חרשים,Harashim,cached label: UNVERIFIED
+הרדוף,Harduf,cached label: UNVERIFIED
+הראל,Harel,cached label: UNVERIFIED
+חריש,Harish,cached label: UNVERIFIED
+חרוצים,Harutzim,cached label: UNVERIFIED
+חשמונאים,Hashmonaim,cached label: UNVERIFIED
+הסוללים,Hasolelim,cached label: UNVERIFIED
+חצב,Hatzav,cached label: UNVERIFIED
 חצר בארותיים,Hatzer Be'erotayim,manual override
-חצב,Hatzav,cached label: review
-חצרים,Hatzerim,cached label: review
-חצבה,Hatzeva,cached label: review
-חזון,Hazon,cached label: review
-חצור הגלילית,Hatzor HaGlilit,cached label: review
-הזורעים,HaZor'im,cached label: review
-הזורע,HaZore'a,cached label: review
+חצרים,Hatzerim,cached label: UNVERIFIED
 חצרות חולדה,Hatzerot Hulda,manual override
 "חצרות כ""ח",Hatzerot Koah,manual override
+חצבה,Hatzeva,cached label: UNVERIFIED
+חצור הגלילית,Hatzor HaGlilit,cached label: UNVERIFIED
+חבצלת השרון,Havatzelet HaSharon,cached label: UNVERIFIED
+הוואשלה (שבט),Hawashla (Tribe),manual override
+היוגב,HaYogev,cached label: UNVERIFIED
+חזון,Hazon,cached label: UNVERIFIED
+הזורעים,HaZor'im,cached label: UNVERIFIED
+הזורע,HaZore'a,cached label: UNVERIFIED
+חברון,Hebron,manual override
 חפצי-בה,Heftziba,manual override
-חלץ,Heletz,cached label: review
+חלץ,Heletz,cached label: UNVERIFIED
+חמדת,Hemdat,manual override
 חמד,Hemed,manual override
-חרב לאת,Herev Le'et,cached label: review
-חרמש,Hermesh,cached label: review
+חרב לאת,Herev Le'et,cached label: UNVERIFIED
+חרמש,Hermesh,cached label: UNVERIFIED
 חירות,Herut,manual override
-הרצליה,Herzliya,cached label: review
+הרצליה,Herzliya,cached label: UNVERIFIED
 חבר,Hever,manual override
-חיבת ציון,Hibat Tzion,cached label: review
+חיבת ציון,Hibat Tzion,cached label: UNVERIFIED
 הילה,Hila,manual override
 חיננית,Hinanit,manual override
-הוד השרון,Hod HaSharon,cached label: review
-הודיות,Hodayot,cached label: review
-הודיה,Hodaya,cached label: review
-חופית,Hofit,cached label: review
-חגלה,Hogla,cached label: review
-חולית,Holit,cached label: review
-חולון,Holon,cached label: review
-חורשים,Horshim,cached label: review
-חוסן,Hosen,cached label: review
-הושעיה,Hoshaya,cached label: review
-חולתה,Hulata,cached label: review
-חולדה,Hulda,cached label: review
-חוקוק,Hukok,cached label: review
-חורה,Hura,cached label: review
-עידן,Idan,cached label: review
-אילניה,Ilaniya,cached label: review
-עילוט,Ilut,cached label: review
-עמנואל,Immanuel,cached label: review
-עיר אובות,Ir Ovot,cached label: review
+חספין,Hispin,manual override
+הוד השרון,Hod HaSharon,cached label: UNVERIFIED
+הודיה,Hodaya,cached label: UNVERIFIED
+הודיות,Hodayot,cached label: UNVERIFIED
+חופית,Hofit,cached label: UNVERIFIED
+חגלה,Hogla,cached label: UNVERIFIED
+חולית,Holit,cached label: UNVERIFIED
+חולון,Holon,cached label: UNVERIFIED
+חורשים,Horshim,cached label: UNVERIFIED
+חוסן,Hosen,cached label: UNVERIFIED
+הושעיה,Hoshaya,cached label: UNVERIFIED
+חוקוק,Hukok,cached label: UNVERIFIED
+חולתה,Hulata,cached label: UNVERIFIED
+חולדה,Hulda,cached label: UNVERIFIED
+חורה,Hura,cached label: UNVERIFIED
+עידן,Idan,cached label: UNVERIFIED
+אילניה,Ilaniya,cached label: UNVERIFIED
+עילוט,Ilut,cached label: UNVERIFIED
+עמנואל,Immanuel,cached label: UNVERIFIED
+עיר אובות,Ir Ovot,cached label: UNVERIFIED
+אירוס,Irus,manual override
 איתמר,Itamar,manual override
-ירושלים,Jerusalem,cached label: review
-כברי,Kabri,cached label: review
-כאבול,Kabul,cached label: review
+ירושלים,Jerusalem,cached label: UNVERIFIED
+כברי,Kabri,cached label: UNVERIFIED
+כאבול,Kabul,cached label: UNVERIFIED
+קדר,Kadar,cached label: UNVERIFIED
+קדרים,Kadarim,cached label: UNVERIFIED
+כדיתה,Kadita,cached label: UNVERIFIED
 כדורי,Kadoorie,manual override
-כחל,Kahal,cached label: review
-כלנית,Kalanit,cached label: review
-כמון,Kamon,cached label: review
+כחל,Kahal,cached label: UNVERIFIED
+כלנית,Kalanit,cached label: UNVERIFIED
+כמון,Kamon,cached label: UNVERIFIED
 כנף,Kanaf,manual override
 כנות,Kanot,manual override
 כרי דשא,Karei Deshe,manual override
-כרכום,Karkom,cached label: review
-כרמי יוסף,Karmei Yosef,cached label: review
+כרכום,Karkom,cached label: UNVERIFIED
+כרמי קטיף,Karmei Katif,cached label: UNVERIFIED
 כרמי צור,Karmei Tzur,manual override
-כרמל,Carmel,cached label: review
+כרמי יוסף,Karmei Yosef,cached label: UNVERIFIED
+כרמיה,Karmia,cached label: UNVERIFIED
 כרמיאל,Karmiel,manual override
-כרמיה,Karmia,cached label: review
-כפר אדומים,Kfar Adumim,cached label: review
-כפר אחים,Kfar Ahim,cached label: review
-כפר אביב,Kfar Aviv,cached label: review
-כפר עבודה,Kfar Avoda,cached label: review
-כפר עזה,Kfar Aza,cached label: review
-כפר ברוך,Kfar Baruch,cached label: review
-כפר ביאליק,Kfar Bialik,cached label: review
+קרני שומרון,Karnei Shomron,manual override
+קציר,Katzir,manual override
+קצרין,Katzrin,manual override
+קדמה,Kedma,cached label: UNVERIFIED
+קדומים,Kedumim,manual override
+קלע,Kela,manual override
+כרם בן שמן,Kerem Ben Shemen,cached label: UNVERIFIED
+כרם בן זמרה,Kerem Ben Zimra,cached label: UNVERIFIED
+"כרם מהר""ל",Kerem Maharal,manual override
+כרם שלום,Kerem Shalom,cached label: UNVERIFIED
+קשת,Keshet,cached label: UNVERIFIED
+קטורה,Ketura,cached label: UNVERIFIED
+כפר אדומים,Kfar Adumim,cached label: UNVERIFIED
+כפר אחים,Kfar Ahim,cached label: UNVERIFIED
+כפר אביב,Kfar Aviv,cached label: UNVERIFIED
+כפר עבודה,Kfar Avoda,cached label: UNVERIFIED
+כפר עזה,Kfar Aza,cached label: UNVERIFIED
+כפר ברוך,Kfar Baruch,cached label: UNVERIFIED
+כפר ביאליק,Kfar Bialik,cached label: UNVERIFIED
 "כפר ביל""ו",Kfar Bilu,manual override
 כפר בן נון,Kfar Bin Nun,manual override
-כפר בלום,Kfar Blum,cached label: review
-כפר דניאל,Kfar Daniel,cached label: review
-כפר עציון,Kfar Etzion,manual override
-כפר גלים,Kfar Galim,cached label: review
-כפר גדעון,Kfar Gidon,cached label: review
-כפר גלעדי,Kfar Giladi,cached label: review
-כפר גליקסון,Kfar Glikson,cached label: review
+כפר בלום,Kfar Blum,cached label: UNVERIFIED
 "כפר חב""ד",Kfar Chabad,manual override
+כפר דניאל,Kfar Daniel,cached label: UNVERIFIED
+כפר עציון,Kfar Etzion,manual override
+כפר גלים,Kfar Galim,cached label: UNVERIFIED
+כפר גדעון,Kfar Gidon,cached label: UNVERIFIED
+כפר גלעדי,Kfar Giladi,cached label: UNVERIFIED
+כפר גליקסון,Kfar Glikson,cached label: UNVERIFIED
 כפר החורש,Kfar HaHoresh,manual override
-כפר המכבי,Kfar HaMaccabi,cached label: review
-כפר הנגיד,Kfar HaNagid,cached label: review
-כפר חנניה,Kfar Hananya,cached label: review
-כפר הנשיא,Kfar HaNassi,cached label: review
-כפר הנוער הדתי,Kfar HaNoar HaDati,cached label: review
+כפר חיים,Kfar Haim,cached label: UNVERIFIED
+כפר המכבי,Kfar HaMaccabi,cached label: UNVERIFIED
+כפר הנגיד,Kfar HaNagid,cached label: UNVERIFIED
+כפר חנניה,Kfar Hananya,cached label: UNVERIFIED
+כפר הנשיא,Kfar HaNassi,cached label: UNVERIFIED
+כפר הנוער הדתי,Kfar HaNoar HaDati,cached label: UNVERIFIED
 כפר האורנים,Kfar HaOranim,manual override
 "כפר הרי""ף",Kfar HaRif,manual override
 "כפר הרא""ה",Kfar HaRoeh,manual override
 כפר חרוב,Kfar Haruv,manual override
-כפר חסידים,Kfar Hasidim,cached label: review
-כפר חיים,Kfar Haim,cached label: review
-כפר הס,Kfar Hess,cached label: review
-כפר חיטים,Kfar Hittim,cached label: review
-כפר חושן,Kfar Hoshen,cached label: review
+כפר חסידים,Kfar Hasidim,cached label: UNVERIFIED
+כפר הס,Kfar Hess,cached label: UNVERIFIED
+כפר חיטים,Kfar Hittim,cached label: UNVERIFIED
+כפר חושן,Kfar Hoshen,cached label: UNVERIFIED
 כפר קיש,Kfar Kish,manual override
+כפר מימון,Kfar Maimon,cached label: UNVERIFIED
 "כפר מל""ל",Kfar Malal,manual override
-כפר מסריק,Kfar Masaryk,cached label: review
-כפר מימון,Kfar Maimon,cached label: review
-כפר מנחם,Kfar Menahem,cached label: review
-כפר מונש,Kfar Monash,cached label: review
-כפר מרדכי,Kfar Mordechai,cached label: review
-כפר נטר,Kfar Netter,cached label: review
-כפר פינס,Kfar Pines,cached label: review
+כפר מסריק,Kfar Masaryk,cached label: UNVERIFIED
+כפר מנחם,Kfar Menahem,cached label: UNVERIFIED
+כפר מונש,Kfar Monash,cached label: UNVERIFIED
+כפר מרדכי,Kfar Mordechai,cached label: UNVERIFIED
+כפר נטר,Kfar Netter,cached label: UNVERIFIED
+כפר פינס,Kfar Pines,cached label: UNVERIFIED
 כפר ראש הנקרה,Kfar Rosh HaNikra,manual override
-כפר רופין,Kfar Ruppin,cached label: review
-כפר רות,Kfar Ruth,cached label: review
-כפר סבא,Kfar Saba,cached label: review
-כפר שמאי,Kfar Shamai,cached label: review
-כפר שמריהו,Kfar Shmaryahu,cached label: review
-כפר שמואל,Kfar Shmuel,cached label: review
-כפר סילבר,Kfar Silver,cached label: review
-כפר סירקין,Kfar Sirkin,cached label: review
-כפר סאלד,Kfar Szold,cached label: review
+כפר רופין,Kfar Ruppin,cached label: UNVERIFIED
+כפר רות,Kfar Ruth,cached label: UNVERIFIED
+כפר סבא,Kfar Saba,cached label: UNVERIFIED
+כפר שמאי,Kfar Shamai,cached label: UNVERIFIED
+כפר שמריהו,Kfar Shmaryahu,cached label: UNVERIFIED
+כפר שמואל,Kfar Shmuel,cached label: UNVERIFIED
+כפר סילבר,Kfar Silver,cached label: UNVERIFIED
+כפר סירקין,Kfar Sirkin,cached label: UNVERIFIED
+כפר סאלד,Kfar Szold,cached label: UNVERIFIED
 כפר תפוח,Kfar Tapuach,manual override
-כפר תבור,Kfar Tavor,cached label: review
-כפר טרומן,Kfar Truman,cached label: review
-כפר אוריה,Kfar Uria,cached label: review
-כפר ויתקין,Kfar Vitkin,cached label: review
-כפר ורבורג,Kfar Warburg,cached label: review
-כפר ורדים,Kfar Vradim,cached label: review
-כפר יעבץ,Kfar Yavetz,cached label: review
-כפר יחזקאל,Kfar Yehezkel,cached label: review
-כפר יהושע,Kfar Yehoshua,cached label: review
-כפר יונה,Kfar Yona,cached label: review
-כפר זיתים,Kfar Zeitim,cached label: review
-כפר זוהרים,Kfar Zoharim,cached label: review
-כליל,Klil,cached label: review
-כמהין,Kmehin,cached label: review
-כרמים,Kramim,cached label: review
-כרם בן שמן,Kerem Ben Shemen,cached label: review
-כרם בן זמרה,Kerem Ben Zimra,cached label: review
-"כרם מהר""ל",Kerem Maharal,manual override
-כרם שלום,Kerem Shalom,cached label: review
-כסלון,Ksalon,cached label: review
-כנרת (מושבה),Kinneret (Moshava),manual override
-כנרת (קבוצה),Kinneret (Kvutza),manual override
-כישור,Kishor,cached label: review
-כיסופים,Kissufim,cached label: review
-כוכב השחר,Kokhav HaShahar,manual override
-כוכב מיכאל,Kokhav Michael,cached label: review
-כוכב יעקב,Kokhav Ya'akov,cached label: review
-כוכב יאיר,Kokhav Yair,manual override
-כורזים,Korazim,cached label: review
-כסיפה,Kuseife,manual override
-להב,Lahav,cached label: review
-להבות הבשן,Lahavot HaBashan,cached label: review
-להבות חביבה,Lehavot Haviva,cached label: review
-לכיש,Lachish,manual override
-לפיד,Lapid,cached label: review
-לפידות,Lapidot,cached label: review
-לקיה,Lakiya,cached label: review
-לביא,Lavi,cached label: review
-לבון,Lavon,cached label: review
-להבים,Lehavim,cached label: review
-שריגים (לי-און),Srigim (Li-On),manual override
-לימן,Liman,cached label: review
-לבנים,Livnim,manual override
-לוד,Lod,cached label: review
-לוחמי הגיטאות,Lohamei HaGeta'ot,manual override
-לוטן,Lotan,cached label: review
-לוטם,Lotem,manual override
-לוזית,Luzit,cached label: review
-מעגן,Ma'agan,cached label: review
-מעגן מיכאל,Ma'agan Michael,cached label: review
-מעלה אדומים,Ma'ale Adumim,manual override
-מעלה עמוס,Ma'ale Amos,manual override
-מעלה אפרים,Ma'ale Efraim,manual override
-מעלה גמלא,Ma'ale Gamla,manual override
-מעלה גלבוע,Ma'ale Gilboa,cached label: review
-מעלה החמישה,Ma'ale HaHamisha,cached label: review
-מעלה עירון,Ma'ale Iron,cached label: review
-מעלה לבונה,Ma'ale Levona,manual override
-מעלה מכמש,Ma'ale Mikhmas,manual override
-מעלות-תרשיחא,Ma'alot-Tarshiha,cached label: review
-מענית,Ma'anit,cached label: review
-מעש,Ma'as,manual override
-מעברות,Ma'abarot,cached label: review
-מעגלים,Ma'agalim,manual override
-מעון,Maon,cached label: review
-מאור,Maor,cached label: review
-מעוז חיים,Maoz Haim,cached label: review
-מעין ברוך,Ma'ayan Baruch,manual override
-מעין צבי,Ma'ayan Tzvi,manual override
-מבועים,Mabu'im,cached label: review
-מגן,Magen,cached label: review
-מגן שאול,Magen Shaul,cached label: review
-מגל,Magal,cached label: review
-מגשימים,Magshimim,cached label: review
-מחניים,Mahanayim,cached label: review
-צוקים,Tzukim,cached label: review
-מחנה יתיר,Mahane Yatir,cached label: review
-מחסיה,Mahseya,cached label: review
-מכחול,Makhul,cached label: review
-מלכישוע,Malkishua,cached label: review
-מלכיה,Malkia,cached label: review
-מנוף,Manof,cached label: review
-מנות,Manot,cached label: review
-מרגליות,Margaliot,manual override
-מסעדה,Mas'ade,cached label: review
-משאבי שדה,Mashabei Sadeh,cached label: review
-משען,Mash'en,cached label: review
-משכיות,Maskiot,manual override
-מסלול,Maslul,cached label: review
-מסד,Massad,cached label: review
-מסדה,Masada,cached label: review
-משואה,Massuah,cached label: review
-משואות יצחק,Masu'ot Yitzhak,cached label: review
-מטע,Mata,cached label: review
-מתן,Matan,cached label: review
-מתת,Mattat,cached label: review
-מתתיהו,Matityahu,manual override
-מבקיעים,Mavki'im,cached label: review
-מזכרת בתיה,Mazkeret Batya,cached label: review
-מצליח,Matzliah,cached label: review
-מזור,Mazor,cached label: review
-מזרעה,Mazra'a,cached label: review
-מצובה,Matzuva,cached label: review
-מי עמי,Mei Ami,cached label: review
-מעונה,Me'ona,cached label: review
-מפלסים,Mefalsim,cached label: review
-מגדים,Megadim,cached label: review
-מגידו,Megiddo,cached label: review
-מחולה,Mehola,cached label: review
-מייסר,Meiser,cached label: review
-מכורה,Mekhora,cached label: review
-מלאה,Mele'a,manual override
-מלילות,Mlilot,cached label: review
-מנחמיה,Menahemia,cached label: review
-מנרה,Manara,cached label: review
-מנוחה,Menuha,cached label: review
-מירב,Meirav,cached label: review
-מרחביה,Merhavia,cached label: review
-מרום גולן,Merom Golan,manual override
-מירון,Meron,cached label: review
-מישר,Meishar,cached label: review
-משהד,Mashhad,cached label: review
-מסילת ציון,Mesilat Zion,cached label: review
-מסילות,Mesilot,cached label: review
-מיתר,Meitar,cached label: review
-מיטב,Meitav,cached label: review
-מטולה,Metula,cached label: review
-מבשרת ציון,Mevaseret Zion,cached label: review
-מבוא ביתר,Mevo Beitar,cached label: review
-מבוא דותן,Mevo Dotan,manual override
-מבוא חמה,Mevo Hama,manual override
-מבוא חורון,Mevo Horon,cached label: review
-מבוא מודיעים,Mevo Modi'im,cached label: review
-מבואות ים,Mevo'ot Yam,cached label: review
-מצדות יהודה,Metzadot Yehuda,manual override
-מיצר,Meitzar,manual override
-מצר,Metzer,cached label: review
-מדרך עוז,Midrakh Oz,cached label: review
-מגדל,Migdal,cached label: review
-מגדל העמק,Migdal HaEmek,cached label: review
-מגדל עוז,Migdal Oz,cached label: review
-מגדלים,Migdalim,manual override
-מכמנים,Mikhmanim,cached label: review
-מכמורת,Mikhmoret,cached label: review
-מקווה ישראל,Mikveh Israel,manual override
-משגב עם,Misgav Am,cached label: review
-משגב דב,Misgav Dov,cached label: review
-משמר איילון,Mishmar Ayalon,cached label: review
-משמר דוד,Mishmar David,cached label: review
-משמר העמק,Mishmar HaEmek,cached label: review
-משמר הנגב,Mishmar HaNegev,cached label: review
-משמר השרון,Mishmar HaSharon,cached label: review
-משמר השבעה,Mishmar HaShiv'a,cached label: review
-משמר הירדן,Mishmar HaYarden,cached label: review
-משמרות,Mishmarot,cached label: review
-משמרת,Mishmeret,cached label: review
-מבטחים,Mivtahim,cached label: review
-מצפה,Mitzpa,cached label: review
-"מצפה אבי""ב",Mitzpe Aviv,manual override
-מצפה נטופה,Mitzpe Netofa,cached label: review
-מצפה רמון,Mitzpe Ramon,cached label: review
-מצפה שלם,Mitzpe Shalem,manual override
-מצפה יריחו,Mitzpe Yericho,manual override
-מזרע,Mizra,manual override
-מודיעין עילית,Modi'in Illit,manual override
-מודיעין-מכבים-רעות,Modi'in-Maccabim-Re'ut,manual override
-מולדת,Moledet,cached label: review
-מורן,Moran,cached label: review
-מורשת,Moreshet,cached label: review
-מוצא עילית,Motza Illit,cached label: review
-נעלה,Na'ale,cached label: review
-נען,Na'an,cached label: review
-אשבל,Eshbal,cached label: review
-חמדת,Hemdat,manual override
-נחל עוז,Nahal Oz,cached label: review
-שיטים,Shitim,cached label: review
-נחלה,Nahala,cached label: review
-נהלל,Nahalal,cached label: review
-נחליאל,Nahliel,manual override
-נחם,Naham,cached label: review
-נהריה,Nahariya,cached label: review
-נחף,Nahef,cached label: review
-נחשולים,Nahsholim,cached label: review
-נחשון,Nahshon,cached label: review
-נחשונים,Nahshonim,cached label: review
-נטף,Nataf,cached label: review
-נטור,Natur,manual override
-נווה,Naveh,cached label: review
-נצרת,Nazareth,cached label: review
-נוף הגליל,Nof HaGalil,cached label: review
-נאות גולן,Neot Golan,manual override
-נאות הכיכר,Neot HaKikar,cached label: review
-נאות מרדכי,Neot Mordechai,cached label: review
-נעורים,Neurim,manual override
-נגבה,Negba,cached label: review
-נחלים,Nehalim,cached label: review
-נהורה,Nehora,cached label: review
-נחושה,Nehusha,cached label: review
-נס עמים,Nes Ammim,cached label: review
-נס הרים,Nes Harim,cached label: review
-נס ציונה,Ness Ziona,cached label: review
-נשר,Nesher,cached label: review
-נטע,Neta,cached label: review
-נטעים,Neta'im,cached label: review
-נתניה,Netanya,cached label: review
-נתיב העשרה,Netiv HaAsara,cached label: review
-נתיב הגדוד,Netiv HaGdud,manual override
-"נתיב הל""ה",Netiv HaLamed-Heh,manual override
-נתיב השיירה,Netiv HaShayara,cached label: review
-נתיבות,Netivot,cached label: review
-נטועה,Netu'a,cached label: review
-נבטים,Nevatim,cached label: review
-"נווה אטי""ב",Neve Ativ,manual override
-נווה אבות,Neve Avot,manual override
-נווה דניאל,Neve Daniel,manual override
-נווה איתן,Neve Eitan,cached label: review
-נווה חריף,Neve Harif,cached label: review
-נווה אילן,Neve Ilan,cached label: review
-נווה מיכאל,Neve Michael,cached label: review
-נווה מבטח,Neve Mivtah,cached label: review
-נווה שלום,Neve Shalom,cached label: review
-נווה אור,Neve Ur,cached label: review
-נווה ים,Neve Yam,cached label: review
-נווה ימין,Neve Yamin,cached label: review
-נווה ירק,Neve Yarak,cached label: review
-נווה זוהר,Neve Zohar,cached label: review
-נצר סרני,Netzer Sereni,cached label: review
-"ניל""י",Nili,manual override
-ניר עם,Nir Am,cached label: review
-ניר עקיבא,Nir Akiva,cached label: review
-ניר בנים,Nir Banim,cached label: review
-ניר דוד (תל עמל),Nir David,cached label: review
-ניר אליהו,Nir Eliyahu,cached label: review
-ניר עציון,Nir Etzion,cached label: review
-ניר גלים,Nir Galim,cached label: review
-"ניר ח""ן",Nir Hen,manual override
-ניר משה,Nir Moshe,cached label: review
-ניר עוז,Nir Oz,cached label: review
-ניר יפה,Nir Yafeh,cached label: review
-ניר ישראל,Nir Yisrael,cached label: review
-ניר יצחק,Nir Yitzhak,cached label: review
-ניר צבי,Nir Tzvi,cached label: review
-נערן,Na'aran,cached label: review
-נירים,Nirim,cached label: review
-נירית,Nirit,cached label: review
-ניצן,Nitzan,cached label: review
-ניצני עוז,Nitzanei Oz,cached label: review
-ניצני סיני,Nitzanei Sinai,cached label: review
-ניצנים,Nitzanim,cached label: review
-נועם,No'am,cached label: review
-נופך,Nofekh,cached label: review
-נופים,Nofim,manual override
-נופית,Nofit,cached label: review
-נוגה,Noga,cached label: review
-נוקדים,Nokdim,manual override
-נורדיה,Nordia,cached label: review
-נוב,Nob,cached label: review
-נורית,Nurit,cached label: review
-אודם,Odem,manual override
-אופקים,Ofakim,cached label: review
-עופר,Ofer,cached label: review
-עופרה,Ofra,manual override
-אוהד,Ohad,cached label: review
-עולש,Olesh,cached label: review
-אומן,Omen,manual override
-עומר,Omer,cached label: review
-אומץ,Ometz,cached label: review
-אור עקיבא,Or Akiva,cached label: review
-אור הגנוז,Or HaGanuz,cached label: review
-אור הנר,Or HaNer,cached label: review
-אור יהודה,Or Yehuda,cached label: review
-אורה,Ora,cached label: review
-אורנים,Oranim,manual override
-אורנית,Oranit,manual override
-אורות,Orot,cached label: review
-אורטל,Ortal,cached label: review
-עתניאל,Otniel,manual override
-עוצם,Otzem,cached label: review
-"פעמי תש""ז",Pa'amei Tashaz,manual override
-פלמחים,Palmachim,cached label: review
-פרדס חנה-כרכור,Pardes Hanna-Karkur,cached label: review
-פרדסיה,Pardesiya,cached label: review
-פרוד,Parod,cached label: review
-פטיש,Patish,manual override
-פדיה,Pedaya,cached label: review
-פדואל,Peduel,manual override
-פדויים,Peduyim,manual override
-פלך,Pelekh,cached label: review
-פני חבר,Pnei Hever,manual override
-פקיעין,Peki'in,cached label: review
-פקיעין חדשה,Peki'in HaHadasha,manual override
-פרזון,Prazon,cached label: review
-פרי גן,Pri Gan,cached label: review
-פסגות,Psagot,manual override
-פתח תקווה,Petah Tikva,cached label: review
-פתחיה,Petahya,cached label: review
-פצאל,Petzael,manual override
-פורת,Porat,cached label: review
-פוריה עילית,Poria Illit,cached label: review
-קדרים,Kadarim,cached label: review
-קדימה-צורן,Tzoran-Kadima,cached label: review
-קרני שומרון,Karnei Shomron,manual override
-קצרין,Katzrin,manual override
-קדר,Kadar,cached label: review
-קדמה,Kedma,cached label: review
-קדומים,Kedumim,manual override
-קלע,Kela,manual override
-קלחים,Klahim,cached label: review
-קיסריה,Caesarea,cached label: review
-קשת,Keshet,cached label: review
-קטורה,Ketura,cached label: review
-קבוצת יבנה,Kvutzat Yavne,cached label: review
+כפר תבור,Kfar Tavor,cached label: UNVERIFIED
+כפר טרומן,Kfar Truman,cached label: UNVERIFIED
+כפר אוריה,Kfar Uria,cached label: UNVERIFIED
+כפר ויתקין,Kfar Vitkin,cached label: UNVERIFIED
+כפר ורדים,Kfar Vradim,cached label: UNVERIFIED
+כפר ורבורג,Kfar Warburg,cached label: UNVERIFIED
+כפר יעבץ,Kfar Yavetz,cached label: UNVERIFIED
+כפר ידידיה,Kfar Yedidia,cached label: UNVERIFIED
+כפר יחזקאל,Kfar Yehezkel,cached label: UNVERIFIED
+כפר יהושע,Kfar Yehoshua,cached label: UNVERIFIED
+כפר יונה,Kfar Yona,cached label: UNVERIFIED
+כפר זיתים,Kfar Zeitim,cached label: UNVERIFIED
+כפר זוהרים,Kfar Zoharim,cached label: UNVERIFIED
 קדמת צבי,Kidmat Tzvi,manual override
-קדרון,Kidron,cached label: review
+קדרון,Kidron,cached label: UNVERIFIED
+כנרת (קבוצה),Kinneret (Kvutza),manual override
+כנרת (מושבה),Kinneret (Moshava),manual override
 קרית ענבים,Kiryat Anavim,manual override
 קרית ארבע,Kiryat Arba,manual override
 קרית אתא,Kiryat Ata,manual override
@@ -833,283 +544,572 @@
 קרית טבעון,Kiryat Tivon,manual override
 קרית ים,Kiryat Yam,manual override
 קרית יערים,Kiryat Yearim,manual override
-קוממיות,Komemiyut,cached label: review
-קורנית,Koranit,cached label: review
-רעננה,Ra'anana,cached label: review
-רהט,Rahat,cached label: review
+כישור,Kishor,cached label: UNVERIFIED
+כיסופים,Kissufim,cached label: UNVERIFIED
+קלחים,Klahim,cached label: UNVERIFIED
+כליל,Klil,cached label: UNVERIFIED
+כמהין,Kmehin,cached label: UNVERIFIED
+כוכב השחר,Kokhav HaShahar,manual override
+כוכב מיכאל,Kokhav Michael,cached label: UNVERIFIED
+כוכב יעקב,Kokhav Ya'akov,cached label: UNVERIFIED
+כוכב יאיר,Kokhav Yair,manual override
+קוממיות,Komemiyut,cached label: UNVERIFIED
+קורנית,Koranit,cached label: UNVERIFIED
+כורזים,Korazim,cached label: UNVERIFIED
+כרמים,Kramim,cached label: UNVERIFIED
+כסלון,Ksalon,cached label: UNVERIFIED
+כחלה,Kuhla,manual override
+כסיפה,Kuseife,manual override
+קבוצת יבנה,Kvutzat Yavne,cached label: UNVERIFIED
+לכיש,Lachish,manual override
+להב,Lahav,cached label: UNVERIFIED
+להבות הבשן,Lahavot HaBashan,cached label: UNVERIFIED
+לקיה,Lakiya,cached label: UNVERIFIED
+לפיד,Lapid,cached label: UNVERIFIED
+לפידות,Lapidot,cached label: UNVERIFIED
+לביא,Lavi,cached label: UNVERIFIED
+לבון,Lavon,cached label: UNVERIFIED
+להבים,Lehavim,cached label: UNVERIFIED
+להבות חביבה,Lehavot Haviva,cached label: UNVERIFIED
+לימן,Liman,cached label: UNVERIFIED
+לבנים,Livnim,manual override
+לוד,Lod,cached label: UNVERIFIED
+לוחמי הגיטאות,Lohamei HaGeta'ot,manual override
+לוטן,Lotan,cached label: UNVERIFIED
+לוטם,Lotem,manual override
+לוזית,Luzit,cached label: UNVERIFIED
+מעברות,Ma'abarot,cached label: UNVERIFIED
+מעגלים,Ma'agalim,manual override
+מעגן,Ma'agan,cached label: UNVERIFIED
+מעגן מיכאל,Ma'agan Michael,cached label: UNVERIFIED
+מעלה אדומים,Ma'ale Adumim,manual override
+מעלה עמוס,Ma'ale Amos,manual override
+מעלה אפרים,Ma'ale Efraim,manual override
+מעלה גמלא,Ma'ale Gamla,manual override
+מעלה גלבוע,Ma'ale Gilboa,cached label: UNVERIFIED
+מעלה החמישה,Ma'ale HaHamisha,cached label: UNVERIFIED
+מעלה עירון,Ma'ale Iron,cached label: UNVERIFIED
+מעלה לבונה,Ma'ale Levona,manual override
+מעלה מכמש,Ma'ale Mikhmas,manual override
+מעלות-תרשיחא,Ma'alot-Tarshiha,cached label: UNVERIFIED
+מענית,Ma'anit,cached label: UNVERIFIED
+מעש,Ma'as,manual override
+מעין ברוך,Ma'ayan Baruch,manual override
+מעין צבי,Ma'ayan Tzvi,manual override
+מבועים,Mabu'im,cached label: UNVERIFIED
+מגל,Magal,cached label: UNVERIFIED
+מגן,Magen,cached label: UNVERIFIED
+מגן שאול,Magen Shaul,cached label: UNVERIFIED
+מגשימים,Magshimim,cached label: UNVERIFIED
+מחניים,Mahanayim,cached label: UNVERIFIED
+מחנה יתיר,Mahane Yatir,cached label: UNVERIFIED
+מחסיה,Mahseya,cached label: UNVERIFIED
+מכחול,Makhul,cached label: UNVERIFIED
+מלכיה,Malkia,cached label: UNVERIFIED
+מלכישוע,Malkishua,cached label: UNVERIFIED
+מנרה,Manara,cached label: UNVERIFIED
+מנוף,Manof,cached label: UNVERIFIED
+מנות,Manot,cached label: UNVERIFIED
+מעון,Maon,cached label: UNVERIFIED
+מאור,Maor,cached label: UNVERIFIED
+מעוז חיים,Maoz Haim,cached label: UNVERIFIED
+מרגליות,Margaliot,manual override
+מסעדה,Mas'ade,cached label: UNVERIFIED
+מסדה,Masada,cached label: UNVERIFIED
+משען,Mash'en,cached label: UNVERIFIED
+משאבי שדה,Mashabei Sadeh,cached label: UNVERIFIED
+משהד,Mashhad,cached label: UNVERIFIED
+משכיות,Maskiot,manual override
+מסלול,Maslul,cached label: UNVERIFIED
+מסד,Massad,cached label: UNVERIFIED
+משואה,Massuah,cached label: UNVERIFIED
+משואות יצחק,Masu'ot Yitzhak,cached label: UNVERIFIED
+מטע,Mata,cached label: UNVERIFIED
+מתן,Matan,cached label: UNVERIFIED
+מתתיהו,Matityahu,manual override
+מתת,Mattat,cached label: UNVERIFIED
+מצליח,Matzliah,cached label: UNVERIFIED
+מצובה,Matzuva,cached label: UNVERIFIED
+מבקיעים,Mavki'im,cached label: UNVERIFIED
+מזכרת בתיה,Mazkeret Batya,cached label: UNVERIFIED
+מזור,Mazor,cached label: UNVERIFIED
+מזרעה,Mazra'a,cached label: UNVERIFIED
+מעונה,Me'ona,cached label: UNVERIFIED
+מפלסים,Mefalsim,cached label: UNVERIFIED
+מגדים,Megadim,cached label: UNVERIFIED
+מגידו,Megiddo,cached label: UNVERIFIED
+מחולה,Mehola,cached label: UNVERIFIED
+מי עמי,Mei Ami,cached label: UNVERIFIED
+מירב,Meirav,cached label: UNVERIFIED
+מייסר,Meiser,cached label: UNVERIFIED
+מישר,Meishar,cached label: UNVERIFIED
+מיתר,Meitar,cached label: UNVERIFIED
+מיטב,Meitav,cached label: UNVERIFIED
+מיצר,Meitzar,manual override
+מכורה,Mekhora,cached label: UNVERIFIED
+מלאה,Mele'a,manual override
+מנחמיה,Menahemia,cached label: UNVERIFIED
+מנוחה,Menuha,cached label: UNVERIFIED
+מרחב עם,Merhav Am,cached label: UNVERIFIED
+מרחביה,Merhavia,cached label: UNVERIFIED
+מרום גולן,Merom Golan,manual override
+מירון,Meron,cached label: UNVERIFIED
+מסילת ציון,Mesilat Zion,cached label: UNVERIFIED
+מסילות,Mesilot,cached label: UNVERIFIED
+מטולה,Metula,cached label: UNVERIFIED
+מצדות יהודה,Metzadot Yehuda,manual override
+מצר,Metzer,cached label: UNVERIFIED
+מבשרת ציון,Mevaseret Zion,cached label: UNVERIFIED
+מבוא ביתר,Mevo Beitar,cached label: UNVERIFIED
+מבוא דותן,Mevo Dotan,manual override
+מבוא חמה,Mevo Hama,manual override
+מבוא חורון,Mevo Horon,cached label: UNVERIFIED
+מבוא מודיעים,Mevo Modi'im,cached label: UNVERIFIED
+מבואות ים,Mevo'ot Yam,cached label: UNVERIFIED
+מבואות יריחו,Mevo'ot Yericho,manual override
+מדרך עוז,Midrakh Oz,cached label: UNVERIFIED
+מגדל,Migdal,cached label: UNVERIFIED
+מגדל העמק,Migdal HaEmek,cached label: UNVERIFIED
+מגדל עוז,Migdal Oz,cached label: UNVERIFIED
+מגדלים,Migdalim,manual override
+מכמנים,Mikhmanim,cached label: UNVERIFIED
+מכמורת,Mikhmoret,cached label: UNVERIFIED
+מקווה ישראל,Mikveh Israel,manual override
+משגב עם,Misgav Am,cached label: UNVERIFIED
+משגב דב,Misgav Dov,cached label: UNVERIFIED
+משמר איילון,Mishmar Ayalon,cached label: UNVERIFIED
+משמר דוד,Mishmar David,cached label: UNVERIFIED
+משמר העמק,Mishmar HaEmek,cached label: UNVERIFIED
+משמר הנגב,Mishmar HaNegev,cached label: UNVERIFIED
+משמר השרון,Mishmar HaSharon,cached label: UNVERIFIED
+משמר השבעה,Mishmar HaShiv'a,cached label: UNVERIFIED
+משמר הירדן,Mishmar HaYarden,cached label: UNVERIFIED
+משמרות,Mishmarot,cached label: UNVERIFIED
+משמרת,Mishmeret,cached label: UNVERIFIED
+מצפה,Mitzpa,cached label: UNVERIFIED
+"מצפה אבי""ב",Mitzpe Aviv,manual override
+מצפה אילן,Mitzpe Ilan,cached label: UNVERIFIED
+מצפה נטופה,Mitzpe Netofa,cached label: UNVERIFIED
+מצפה רמון,Mitzpe Ramon,cached label: UNVERIFIED
+מצפה שלם,Mitzpe Shalem,manual override
+מצפה יריחו,Mitzpe Yericho,manual override
+מבטחים,Mivtahim,cached label: UNVERIFIED
+מזרע,Mizra,manual override
+מלילות,Mlilot,cached label: UNVERIFIED
+מודיעין עילית,Modi'in Illit,manual override
+מודיעין-מכבים-רעות,Modi'in-Maccabim-Re'ut,manual override
+מולדת,Moledet,cached label: UNVERIFIED
+מורן,Moran,cached label: UNVERIFIED
+מורשת,Moreshet,cached label: UNVERIFIED
+מוצא עילית,Motza Illit,cached label: UNVERIFIED
+נעלה,Na'ale,cached label: UNVERIFIED
+נען,Na'an,cached label: UNVERIFIED
+נערן,Na'aran,cached label: UNVERIFIED
+נחל עוז,Nahal Oz,cached label: UNVERIFIED
+נחלה,Nahala,cached label: UNVERIFIED
+נהלל,Nahalal,cached label: UNVERIFIED
+נחם,Naham,cached label: UNVERIFIED
+נהריה,Nahariya,cached label: UNVERIFIED
+נחף,Nahef,cached label: UNVERIFIED
+נחליאל,Nahliel,manual override
+נחשולים,Nahsholim,cached label: UNVERIFIED
+נחשון,Nahshon,cached label: UNVERIFIED
+נחשונים,Nahshonim,cached label: UNVERIFIED
+נטף,Nataf,cached label: UNVERIFIED
+נטור,Natur,manual override
+נווה,Naveh,cached label: UNVERIFIED
+נצרת,Nazareth,cached label: UNVERIFIED
+נגבה,Negba,cached label: UNVERIFIED
+נגוהות,Negohot,manual override
+נחלים,Nehalim,cached label: UNVERIFIED
+נהורה,Nehora,cached label: UNVERIFIED
+נחושה,Nehusha,cached label: UNVERIFIED
+נאות גולן,Neot Golan,manual override
+נאות הכיכר,Neot HaKikar,cached label: UNVERIFIED
+נאות מרדכי,Neot Mordechai,cached label: UNVERIFIED
+נאות סמדר,Neot Semadar,cached label: UNVERIFIED
+נס עמים,Nes Ammim,cached label: UNVERIFIED
+נס הרים,Nes Harim,cached label: UNVERIFIED
+נשר,Nesher,cached label: UNVERIFIED
+נס ציונה,Ness Ziona,cached label: UNVERIFIED
+נטע,Neta,cached label: UNVERIFIED
+נטעים,Neta'im,cached label: UNVERIFIED
+נתניה,Netanya,cached label: UNVERIFIED
+נתיב העשרה,Netiv HaAsara,cached label: UNVERIFIED
+נתיב הגדוד,Netiv HaGdud,manual override
+"נתיב הל""ה",Netiv HaLamed-Heh,manual override
+נתיב השיירה,Netiv HaShayara,cached label: UNVERIFIED
+נתיבות,Netivot,cached label: UNVERIFIED
+נטועה,Netu'a,cached label: UNVERIFIED
+נצר חזני,Netzer Hazani,cached label: UNVERIFIED
+נצר סרני,Netzer Sereni,cached label: UNVERIFIED
+נעורים,Neurim,manual override
+נבטים,Nevatim,cached label: UNVERIFIED
+"נווה אטי""ב",Neve Ativ,manual override
+נווה אבות,Neve Avot,manual override
+נווה דניאל,Neve Daniel,manual override
+נווה איתן,Neve Eitan,cached label: UNVERIFIED
+נווה חריף,Neve Harif,cached label: UNVERIFIED
+נווה אילן,Neve Ilan,cached label: UNVERIFIED
+נווה מיכאל,Neve Michael,cached label: UNVERIFIED
+נווה מבטח,Neve Mivtah,cached label: UNVERIFIED
+נווה שלום,Neve Shalom,cached label: UNVERIFIED
+נוה צוף,Neve Tzuf,manual override
+נווה אור,Neve Ur,cached label: UNVERIFIED
+נווה ים,Neve Yam,cached label: UNVERIFIED
+נווה ימין,Neve Yamin,cached label: UNVERIFIED
+נווה ירק,Neve Yarak,cached label: UNVERIFIED
+נווה זיו,Neve Ziv,cached label: UNVERIFIED
+נווה זוהר,Neve Zohar,cached label: UNVERIFIED
+"ניל""י",Nili,manual override
+נמרוד,Nimrod,manual override
+ניר עקיבא,Nir Akiva,cached label: UNVERIFIED
+ניר עם,Nir Am,cached label: UNVERIFIED
+ניר בנים,Nir Banim,cached label: UNVERIFIED
+ניר דוד (תל עמל),Nir David,cached label: UNVERIFIED
+ניר אליהו,Nir Eliyahu,cached label: UNVERIFIED
+ניר עציון,Nir Etzion,cached label: UNVERIFIED
+ניר גלים,Nir Galim,cached label: UNVERIFIED
+"ניר ח""ן",Nir Hen,manual override
+ניר משה,Nir Moshe,cached label: UNVERIFIED
+ניר עוז,Nir Oz,cached label: UNVERIFIED
+ניר צבי,Nir Tzvi,cached label: UNVERIFIED
+ניר יפה,Nir Yafeh,cached label: UNVERIFIED
+ניר ישראל,Nir Yisrael,cached label: UNVERIFIED
+ניר יצחק,Nir Yitzhak,cached label: UNVERIFIED
+נירים,Nirim,cached label: UNVERIFIED
+נירית,Nirit,cached label: UNVERIFIED
+ניצן,Nitzan,cached label: UNVERIFIED
+ניצני עוז,Nitzanei Oz,cached label: UNVERIFIED
+ניצני סיני,Nitzanei Sinai,cached label: UNVERIFIED
+ניצנים,Nitzanim,cached label: UNVERIFIED
+נועם,No'am,cached label: UNVERIFIED
+נוב,Nob,cached label: UNVERIFIED
+נוף איילון,Nof Ayalon,cached label: UNVERIFIED
+נוף הגליל,Nof HaGalil,cached label: UNVERIFIED
+נופך,Nofekh,cached label: UNVERIFIED
+נופים,Nofim,manual override
+נופית,Nofit,cached label: UNVERIFIED
+נוגה,Noga,cached label: UNVERIFIED
+נוקדים,Nokdim,manual override
+נורדיה,Nordia,cached label: UNVERIFIED
+נורית,Nurit,cached label: UNVERIFIED
+אודם,Odem,manual override
+אופקים,Ofakim,cached label: UNVERIFIED
+עופר,Ofer,cached label: UNVERIFIED
+עופרה,Ofra,manual override
+אוהד,Ohad,cached label: UNVERIFIED
+עולש,Olesh,cached label: UNVERIFIED
+אומן,Omen,manual override
+עומר,Omer,cached label: UNVERIFIED
+אומץ,Ometz,cached label: UNVERIFIED
+אור עקיבא,Or Akiva,cached label: UNVERIFIED
+אור הגנוז,Or HaGanuz,cached label: UNVERIFIED
+אור הנר,Or HaNer,cached label: UNVERIFIED
+אור יהודה,Or Yehuda,cached label: UNVERIFIED
+אורה,Ora,cached label: UNVERIFIED
+אורנים,Oranim,manual override
+אורנית,Oranit,manual override
+אורות,Orot,cached label: UNVERIFIED
+אורטל,Ortal,cached label: UNVERIFIED
+אשרת,Oshrat,cached label: UNVERIFIED
+עתניאל,Otniel,manual override
+עוצם,Otzem,cached label: UNVERIFIED
+"פעמי תש""ז",Pa'amei Tashaz,manual override
+פלמחים,Palmachim,cached label: UNVERIFIED
+פרדס חנה-כרכור,Pardes Hanna-Karkur,cached label: UNVERIFIED
+פרדסיה,Pardesiya,cached label: UNVERIFIED
+פרוד,Parod,cached label: UNVERIFIED
+פטיש,Patish,manual override
+פדיה,Pedaya,cached label: UNVERIFIED
+פדואל,Peduel,manual override
+פדויים,Peduyim,manual override
+פקיעין,Peki'in,cached label: UNVERIFIED
+פקיעין חדשה,Peki'in HaHadasha,manual override
+פלך,Pelekh,cached label: UNVERIFIED
+פתח תקווה,Petah Tikva,cached label: UNVERIFIED
+פתחיה,Petahya,cached label: UNVERIFIED
+פצאל,Petzael,manual override
+פני חבר,Pnei Hever,manual override
+פורת,Porat,cached label: UNVERIFIED
+פוריה עילית,Poria Illit,cached label: UNVERIFIED
+פרזון,Prazon,cached label: UNVERIFIED
+פרי גן,Pri Gan,cached label: UNVERIFIED
+פסגות,Psagot,manual override
+רעננה,Ra'anana,cached label: UNVERIFIED
+רהט,Rahat,cached label: UNVERIFIED
+רקפת,Rakefet,cached label: UNVERIFIED
 רם-און,Ram-On,manual override
-רמת דוד,Ramat David,cached label: review
-רמת גן,Ramat Gan,cached label: review
-רמת הכובש,Ramat HaKovesh,cached label: review
-רמת השרון,Ramat HaSharon,cached label: review
-רמת השופט,Ramat HaShofet,cached label: review
-רמת מגשימים,Ramat Magshimim,cached label: review
-רמת רחל,Ramat Rachel,cached label: review
-רמת רזיאל,Ramat Raziel,cached label: review
-רמת ישי,Ramat Yishai,cached label: review
-רמת יוחנן,Ramat Yohanan,cached label: review
-רמת צבי,Ramat Tzvi,cached label: review
-ראמה,Rameh,cached label: review
-רמלה,Ramla,cached label: review
-רמות,Ramot,cached label: review
-רמות השבים,Ramot HaShavim,cached label: review
-רמות מאיר,Ramot Meir,cached label: review
-רמות מנשה,Ramot Menashe,cached label: review
-רמות נפתלי,Ramot Naftali,cached label: review
-רנן,Ranen,cached label: review
-רקפת,Rakefet,cached label: review
-רביד,Ravid,cached label: review
-רעים,Re'im,cached label: review
-רגבים,Regavim,cached label: review
-רגבה,Regba,cached label: review
+רמת דוד,Ramat David,cached label: UNVERIFIED
+רמת גן,Ramat Gan,cached label: UNVERIFIED
+רמת הכובש,Ramat HaKovesh,cached label: UNVERIFIED
+רמת השרון,Ramat HaSharon,cached label: UNVERIFIED
+רמת השופט,Ramat HaShofet,cached label: UNVERIFIED
+רמת מגשימים,Ramat Magshimim,cached label: UNVERIFIED
+רמת רחל,Ramat Rachel,cached label: UNVERIFIED
+רמת רזיאל,Ramat Raziel,cached label: UNVERIFIED
+רמת צבי,Ramat Tzvi,cached label: UNVERIFIED
+רמת ישי,Ramat Yishai,cached label: UNVERIFIED
+רמת יוחנן,Ramat Yohanan,cached label: UNVERIFIED
+ראמה,Rameh,cached label: UNVERIFIED
+רמלה,Ramla,cached label: UNVERIFIED
+רמות,Ramot,cached label: UNVERIFIED
+רמות השבים,Ramot HaShavim,cached label: UNVERIFIED
+רמות מאיר,Ramot Meir,cached label: UNVERIFIED
+רמות מנשה,Ramot Menashe,cached label: UNVERIFIED
+רמות נפתלי,Ramot Naftali,cached label: UNVERIFIED
+רנן,Ranen,cached label: UNVERIFIED
+רביד,Ravid,cached label: UNVERIFIED
+רעים,Re'im,cached label: UNVERIFIED
+רגבים,Regavim,cached label: UNVERIFIED
+רגבה,Regba,cached label: UNVERIFIED
+ריחאניה,Rehaniya,cached label: UNVERIFIED
+רחלים,Rehelim,manual override
+רחוב,Rehov,cached label: UNVERIFIED
+רחובות,Rehovot,cached label: UNVERIFIED
 ריחן,Reihan,manual override
-רחוב,Rehov,cached label: review
-רחובות,Rehovot,cached label: review
-ריחאניה,Rehaniya,cached label: review
-ריינה,Reineh,cached label: review
-רכסים,Rekhasim,cached label: review
-רשפים,Reshafim,cached label: review
-רתמים,Retamim,cached label: review
-רבדים,Revadim,cached label: review
+ריינה,Reineh,cached label: UNVERIFIED
+רכסים,Rekhasim,cached label: UNVERIFIED
+רשפים,Reshafim,cached label: UNVERIFIED
+רתמים,Retamim,cached label: UNVERIFIED
+רבדים,Revadim,cached label: UNVERIFIED
+רווחה,Revaha,cached label: UNVERIFIED
 רבבה,Revava,manual override
-רביבים,Revivim,cached label: review
-רווחה,Revaha,cached label: review
-רוויה,Revaya,cached label: review
-רימונים,Rimonim,cached label: review
-רינתיה,Rinatya,cached label: review
-ראשון לציון,Rishon LeZion,cached label: review
-רשפון,Rishpon,cached label: review
+רוויה,Revaya,cached label: UNVERIFIED
+רביבים,Revivim,cached label: UNVERIFIED
+רימונים,Rimonim,cached label: UNVERIFIED
+רינתיה,Rinatya,cached label: UNVERIFIED
+ראשון לציון,Rishon LeZion,cached label: UNVERIFIED
+רשפון,Rishpon,cached label: UNVERIFIED
 רועי,Ro'i,manual override
-ראש העין,Rosh HaAyin,cached label: review
-ראש פינה,Rosh Pinna,cached label: review
+ראש העין,Rosh HaAyin,cached label: UNVERIFIED
+ראש פינה,Rosh Pinna,cached label: UNVERIFIED
 ראש צורים,Rosh Tzurim,manual override
 רותם,Rotem,manual override
-רוחמה,Ruhama,cached label: review
-סעד,Sa'ad,cached label: review
-סער,Sa'ar,cached label: review
+רוח מדבר,Ruah Midbar,cached label: UNVERIFIED
+רוחמה,Ruhama,cached label: UNVERIFIED
+סעד,Sa'ad,cached label: UNVERIFIED
+סער,Sa'ar,cached label: UNVERIFIED
+צפת,Safed,cached label: UNVERIFIED
 סלעית,Sal'it,manual override
-ספיר,Sapir,cached label: review
-שריד,Sarid,cached label: review
-סאסא,Sasa,cached label: review
-סביון,Savyon,cached label: review
-שדי אברהם,Sdei Avraham,cached label: review
-שדה בוקר,Sde Boker,cached label: review
-שדה דוד,Sde David,cached label: review
-שדה אליעזר,Sde Eliezer,cached label: review
-שדה אליהו,Sde Eliyahu,cached label: review
-שדי חמד,Sdei Hemed,cached label: review
-שדה אילן,Sde Ilan,cached label: review
-שדה משה,Sde Moshe,cached label: review
-שדה נחום,Sde Nahum,cached label: review
-שדה נחמיה,Sde Nehemia,cached label: review
-שדה ניצן,Sde Nitzan,cached label: review
-שדי תרומות,Sdei Trumot,cached label: review
-שדה עוזיהו,Sde Uziyahu,cached label: review
-שדה ורבורג,Sde Warburg,cached label: review
-שדה יעקב,Sde Ya'akov,cached label: review
-שדה יצחק,Sde Yitzhak,cached label: review
-שדה יואב,Sde Yoav,cached label: review
-שדה צבי,Sde Tzvi,cached label: review
-שדרות,Sderot,cached label: review
-שדות מיכה,Sdot Micha,cached label: review
-שדות ים,Sdot Yam,cached label: review
+סנסנה,Sansana,manual override
+ספיר,Sapir,cached label: UNVERIFIED
+שריד,Sarid,cached label: UNVERIFIED
+שרונה,Sarona,cached label: UNVERIFIED
+סאסא,Sasa,cached label: UNVERIFIED
+סביון,Savyon,cached label: UNVERIFIED
+שדה בוקר,Sde Boker,cached label: UNVERIFIED
+שדה דוד,Sde David,cached label: UNVERIFIED
+שדה אליעזר,Sde Eliezer,cached label: UNVERIFIED
+שדה אליהו,Sde Eliyahu,cached label: UNVERIFIED
+שדה אילן,Sde Ilan,cached label: UNVERIFIED
+שדה משה,Sde Moshe,cached label: UNVERIFIED
+שדה נחום,Sde Nahum,cached label: UNVERIFIED
+שדה נחמיה,Sde Nehemia,cached label: UNVERIFIED
+שדה ניצן,Sde Nitzan,cached label: UNVERIFIED
+שדה צבי,Sde Tzvi,cached label: UNVERIFIED
+שדה עוזיהו,Sde Uziyahu,cached label: UNVERIFIED
+שדה ורבורג,Sde Warburg,cached label: UNVERIFIED
+שדה יעקב,Sde Ya'akov,cached label: UNVERIFIED
+שדה יצחק,Sde Yitzhak,cached label: UNVERIFIED
+שדה יואב,Sde Yoav,cached label: UNVERIFIED
+שדי אברהם,Sdei Avraham,cached label: UNVERIFIED
+שדי חמד,Sdei Hemed,cached label: UNVERIFIED
+שדי תרומות,Sdei Trumot,cached label: UNVERIFIED
+שדרות,Sderot,cached label: UNVERIFIED
+שדות מיכה,Sdot Micha,cached label: UNVERIFIED
+שדות ים,Sdot Yam,cached label: UNVERIFIED
 סגולה,Segula,manual override
-שניר,Snir,cached label: review
-שעל,Sha'al,cached label: review
-שעלבים,Sha'alvim,cached label: review
-שער אפרים,Sha'ar Efraim,cached label: review
-שער העמקים,Sha'ar HaAmakim,cached label: review
-שער הגולן,Sha'ar HaGolan,cached label: review
+שעל,Sha'al,cached label: UNVERIFIED
+שעלבים,Sha'alvim,cached label: UNVERIFIED
+שער אפרים,Sha'ar Efraim,cached label: UNVERIFIED
+שער העמקים,Sha'ar HaAmakim,cached label: UNVERIFIED
+שער הגולן,Sha'ar HaGolan,cached label: UNVERIFIED
 שער מנשה,Sha'ar Menashe,manual override
 שערי תקווה,Sha'arei Tikva,manual override
-שדמות דבורה,Shadmot Dvora,cached label: review
+שדמות דבורה,Shadmot Dvora,cached label: UNVERIFIED
 שדמות מחולה,Shadmot Mehola,manual override
-שפיר,Shafir,cached label: review
-שחר,Shahar,cached label: review
-שחרות,Shaharut,cached label: review
-שלווה במדבר,Shalva BaMidbar,cached label: review
-שלווה,Shalva,cached label: review
-שמרת,Shomrat,cached label: review
-שמיר,Shamir,cached label: review
-שני,Shani,manual override
+שפיר,Shafir,cached label: UNVERIFIED
+שחר,Shahar,cached label: UNVERIFIED
+שחרות,Shaharut,cached label: UNVERIFIED
 שקד,Shaked,manual override
-שרונה,Sarona,cached label: review
-שרשרת,Sharsheret,cached label: review
+שלווה,Shalva,cached label: UNVERIFIED
+שלווה במדבר,Shalva BaMidbar,cached label: UNVERIFIED
+שמיר,Shamir,cached label: UNVERIFIED
+שני,Shani,manual override
+שרשרת,Sharsheret,cached label: UNVERIFIED
+שבי דרום,Shavei Darom,manual override
 שבי שומרון,Shavei Shomron,manual override
-שבי ציון,Shavei Tzion,cached label: review
-שאר ישוב,She'ar Yashuv,cached label: review
-שדמה,Shdema,cached label: review
-שפיים,Shefayim,cached label: review
-שפר,Shefer,cached label: review
-שכניה,Shekhanya,cached label: review
-שלומי,Shlomi,cached label: review
-שלוחות,Shluhot,cached label: review
-שקף,Shekef,cached label: review
-שתולה,Shtula,cached label: review
-שתולים,Shtulim,cached label: review
-שזור,Shezor,cached label: review
-שיבולים,Shibolim,cached label: review
-שילת,Shilat,cached label: review
+שבי ציון,Shavei Tzion,cached label: UNVERIFIED
+שדמה,Shdema,cached label: UNVERIFIED
+שאר ישוב,She'ar Yashuv,cached label: UNVERIFIED
+שפיים,Shefayim,cached label: UNVERIFIED
+שפר,Shefer,cached label: UNVERIFIED
+שקף,Shekef,cached label: UNVERIFIED
+שכניה,Shekhanya,cached label: UNVERIFIED
+שיזף,Shezaf,cached label: UNVERIFIED
+שזור,Shezor,cached label: UNVERIFIED
+שיבולים,Shibolim,cached label: UNVERIFIED
+שילת,Shilat,cached label: UNVERIFIED
 שילה,Shilo,manual override
 שמעה,Shim'a,manual override
-נאות סמדר,Neot Semadar,cached label: review
-שואבה,Sho'eva,cached label: review
-שוהם,Shoham,cached label: review
-שומרה,Shomera,cached label: review
-שומריה,Shomria,cached label: review
-שוקדה,Shokeda,cached label: review
-שורשים,Shorashim,cached label: review
-שורש,Shoresh,cached label: review
-שושנת העמקים,Shoshanat HaAmakim,cached label: review
-צוקי ים,Tzukei Yam,cached label: review
-שובל,Shoval,cached label: review
-שובה,Shuva,cached label: review
-סתריה,Sitria,cached label: review
-סופה,Sufa,cached label: review
-סולם,Sulam,cached label: review
+שמשית,Shimshit,cached label: UNVERIFIED
+שיטים,Shitim,cached label: UNVERIFIED
+שלומי,Shlomi,cached label: UNVERIFIED
+שלוחות,Shluhot,cached label: UNVERIFIED
+שלומית,Shlumit,cached label: UNVERIFIED
+שואבה,Sho'eva,cached label: UNVERIFIED
+שוהם,Shoham,cached label: UNVERIFIED
+שוקדה,Shokeda,cached label: UNVERIFIED
+שומרה,Shomera,cached label: UNVERIFIED
+שמרת,Shomrat,cached label: UNVERIFIED
+שומריה,Shomria,cached label: UNVERIFIED
+שורשים,Shorashim,cached label: UNVERIFIED
+שורש,Shoresh,cached label: UNVERIFIED
+שושנת העמקים,Shoshanat HaAmakim,cached label: UNVERIFIED
+שובל,Shoval,cached label: UNVERIFIED
+שתולה,Shtula,cached label: UNVERIFIED
+שתולים,Shtulim,cached label: UNVERIFIED
+שובה,Shuva,cached label: UNVERIFIED
+סתריה,Sitria,cached label: UNVERIFIED
+שניר,Snir,cached label: UNVERIFIED
+שריגים (לי-און),Srigim (Li-On),manual override
+סופה,Sufa,cached label: UNVERIFIED
+סולם,Sulam,cached label: UNVERIFIED
 סוסיה,Susya,manual override
-תעוז,Ta'oz,cached label: review
-טל שחר,Tal Shahar,cached label: review
-טל-אל,Tal El,cached label: review
+תעוז,Ta'oz,cached label: UNVERIFIED
+טל-אל,Tal El,cached label: UNVERIFIED
+טל שחר,Tal Shahar,cached label: UNVERIFIED
 "תלמי ביל""ו",Talmei Bilu,manual override
-תלמי אלעזר,Talmei Elazar,cached label: review
-תלמי אליהו,Talmei Eliyahu,cached label: review
-תלמי יפה,Talmei Yaffe,cached label: review
-תלמי יחיאל,Talmei Yehiel,cached label: review
-תלמי יוסף,Talmei Yosef,cached label: review
-טלמון,Talmon,cached label: review
-תרום,Tarum,cached label: review
+תלמי אלעזר,Talmei Elazar,cached label: UNVERIFIED
+תלמי אליהו,Talmei Eliyahu,cached label: UNVERIFIED
+תלמי יפה,Talmei Yaffe,cached label: UNVERIFIED
+תלמי יחיאל,Talmei Yehiel,cached label: UNVERIFIED
+תלמי יוסף,Talmei Yosef,cached label: UNVERIFIED
+טלמון,Talmon,cached label: UNVERIFIED
+תרום,Tarum,cached label: UNVERIFIED
 תאשור,Te'ashur,manual override
-טפחות,Tefahot,cached label: review
-תל עדשים,Tel Adashim,cached label: review
+טפחות,Tefahot,cached label: UNVERIFIED
+תקוע,Tekoa,manual override
+תל עדשים,Tel Adashim,cached label: UNVERIFIED
 תל אביב - יפו,Tel Aviv-Yafo,manual override
-תל מונד,Tel Mond,cached label: review
-תל קציר,Tel Katzir,cached label: review
+תל קציר,Tel Katzir,cached label: UNVERIFIED
+תל מונד,Tel Mond,cached label: UNVERIFIED
 תל שבע,Tel Sheva,manual override
-תל תאומים,Tel Te'omim,cached label: review
-תל יצחק,Tel Yitzhak,cached label: review
-תל יוסף,Tel Yosef,cached label: review
-טללים,Tlalim,cached label: review
-תלמים,Tlamim,cached label: review
+תל תאומים,Tel Te'omim,cached label: UNVERIFIED
+תל יצחק,Tel Yitzhak,cached label: UNVERIFIED
+תל יוסף,Tel Yosef,cached label: UNVERIFIED
 תלם,Telem,manual override
 טנא,Tene,manual override
-תנובות,Tnuvot,cached label: review
-תקוע,Tekoa,manual override
-תקומה,Tkuma,cached label: review
-טבריה,Tiberias,cached label: review
-תדהר,Tidhar,cached label: review
-תפרח,Tifrah,cached label: review
-תימורים,Timorim,cached label: review
-תמרת,Timrat,cached label: review
-טירת כרמל,Tirat Carmel,cached label: review
-טירת יהודה,Tirat Yehuda,cached label: review
-טירת צבי,Tirat Zvi,cached label: review
-טירה,Tira,cached label: review
-תירוש,Tirosh,cached label: review
-תומר,Tomer,cached label: review
-תושיה,Tushia,cached label: review
-תובל,Tuval,cached label: review
-אודים,Udim,cached label: review
-אורים,Urim,cached label: review
-אושה,Usha,cached label: review
-עוזה,Uza,cached label: review
-עוזייר,Uzeir,cached label: review
-ורדון,Vardon,cached label: review
+טבריה,Tiberias,cached label: UNVERIFIED
+תדהר,Tidhar,cached label: UNVERIFIED
+תפרח,Tifrah,cached label: UNVERIFIED
+תימורים,Timorim,cached label: UNVERIFIED
+תמרת,Timrat,cached label: UNVERIFIED
+טירה,Tira,cached label: UNVERIFIED
+טירת כרמל,Tirat Carmel,cached label: UNVERIFIED
+טירת יהודה,Tirat Yehuda,cached label: UNVERIFIED
+טירת צבי,Tirat Zvi,cached label: UNVERIFIED
+תירוש,Tirosh,cached label: UNVERIFIED
+תקומה,Tkuma,cached label: UNVERIFIED
+טללים,Tlalim,cached label: UNVERIFIED
+תלמים,Tlamim,cached label: UNVERIFIED
+תנובות,Tnuvot,cached label: UNVERIFIED
+תומר,Tomer,cached label: UNVERIFIED
+צופית,Tsofit,cached label: UNVERIFIED
+תושיה,Tushia,cached label: UNVERIFIED
+תובל,Tuval,cached label: UNVERIFIED
+צפריה,Tzafria,cached label: UNVERIFIED
+צאלים,Tze'elim,cached label: UNVERIFIED
+צלפון,Tzelafon,cached label: UNVERIFIED
+ציפורי,Tzippori,cached label: UNVERIFIED
+צופר,Tzofar,cached label: UNVERIFIED
+צופיה,Tzofiya,cached label: UNVERIFIED
+צוחר,Tzohar,cached label: UNVERIFIED
+קדימה-צורן,Tzoran-Kadima,cached label: UNVERIFIED
+צובה,Tzova,cached label: UNVERIFIED
+צרופה,Tzrufa,cached label: UNVERIFIED
+צופים,Tzufim,manual override
+צוקי ים,Tzukei Yam,cached label: UNVERIFIED
+צוקים,Tzukim,cached label: UNVERIFIED
+צור הדסה,Tzur Hadassah,cached label: UNVERIFIED
+צור משה,Tzur Moshe,cached label: UNVERIFIED
+צור נתן,Tzur Natan,cached label: UNVERIFIED
+צור יצחק,Tzur Yitzhak,cached label: UNVERIFIED
+צוריאל,Tzuriel,cached label: UNVERIFIED
+צורית,Tzurit,cached label: UNVERIFIED
+צביה,Tzvia,manual override
+אודים,Udim,cached label: UNVERIFIED
+אורים,Urim,cached label: UNVERIFIED
+אושה,Usha,cached label: UNVERIFIED
+עוזה,Uza,cached label: UNVERIFIED
+עוזייר,Uzeir,cached label: UNVERIFIED
+ורדון,Vardon,cached label: UNVERIFIED
 ורד יריחו,Vered Yericho,manual override
-יעד,Ya'ad,cached label: review
-יערה,Ya'ara,cached label: review
-יעל,Yael,manual override
-יד בנימין,Yad Binyamin,cached label: review
-יד חנה,Yad Hanna,cached label: review
-יד השמונה,Yad HaShmona,cached label: review
-יד מרדכי,Yad Mordechai,cached label: review
-יד נתן,Yad Natan,cached label: review
+יעד,Ya'ad,cached label: UNVERIFIED
+יערה,Ya'ara,cached label: UNVERIFIED
+יד בנימין,Yad Binyamin,cached label: UNVERIFIED
+יד חנה,Yad Hanna,cached label: UNVERIFIED
+יד השמונה,Yad HaShmona,cached label: UNVERIFIED
+יד מרדכי,Yad Mordechai,cached label: UNVERIFIED
+יד נתן,Yad Natan,cached label: UNVERIFIED
 "יד רמב""ם",Yad Rambam,manual override
-יפית,Yafit,cached label: review
-יגל,Yagel,cached label: review
-יגור,Yagur,cached label: review
-יהל,Yahel,cached label: review
-יכיני,Yakhini,cached label: review
-ינוב,Yanuv,cached label: review
+יעל,Yael,manual override
+יפית,Yafit,cached label: UNVERIFIED
+יגל,Yagel,cached label: UNVERIFIED
+יגור,Yagur,cached label: UNVERIFIED
+יהל,Yahel,cached label: UNVERIFIED
+יכיני,Yakhini,cached label: UNVERIFIED
 יקיר,Yakir,manual override
-יקום,Yakum,cached label: review
-ירדנה,Yardena,cached label: review
-ירחיב,Yarhiv,cached label: review
-ירקונה,Yarkona,cached label: review
-יסעור,Yas'ur,cached label: review
-ישרש,Yashresh,cached label: review
-יתד,Yated,cached label: review
-יבנה,Yavne,cached label: review
-יבנאל,Yavne'el,cached label: review
-יציץ,Yatzitz,cached label: review
-יעף,Ye'af,cached label: review
-ידידה,Yedida,cached label: review
-כפר ידידיה,Kfar Yedidia,cached label: review
-יחיעם,Yehiam,cached label: review
-יהוד-מונוסון,Yehud-Monosson,cached label: review
-ירוחם,Yeruham,cached label: review
-ישע,Yesha,cached label: review
-יסודות,Yesodot,cached label: review
-יסוד המעלה,Yesud HaMa'ala,cached label: review
-יבול,Yevul,cached label: review
-יפעת,Yifat,cached label: review
-יפתח,Yiftah,cached label: review
-ינון,Yinon,cached label: review
-יראון,Yir'on,cached label: review
-ישעי,Yish'i,cached label: review
+יקום,Yakum,cached label: UNVERIFIED
+ינוב,Yanuv,cached label: UNVERIFIED
+ירדנה,Yardena,cached label: UNVERIFIED
+ירחיב,Yarhiv,cached label: UNVERIFIED
+ירקונה,Yarkona,cached label: UNVERIFIED
+יסעור,Yas'ur,cached label: UNVERIFIED
+ישרש,Yashresh,cached label: UNVERIFIED
+יתד,Yated,cached label: UNVERIFIED
+יתיר,Yatir,manual override
+יציץ,Yatzitz,cached label: UNVERIFIED
+יבנה,Yavne,cached label: UNVERIFIED
+יבנאל,Yavne'el,cached label: UNVERIFIED
+יעף,Ye'af,cached label: UNVERIFIED
+ידידה,Yedida,cached label: UNVERIFIED
+יחיעם,Yehiam,cached label: UNVERIFIED
+יהוד-מונוסון,Yehud-Monosson,cached label: UNVERIFIED
+ירוחם,Yeruham,cached label: UNVERIFIED
+ישע,Yesha,cached label: UNVERIFIED
+יסודות,Yesodot,cached label: UNVERIFIED
+יסוד המעלה,Yesud HaMa'ala,cached label: UNVERIFIED
+יבול,Yevul,cached label: UNVERIFIED
+יפעת,Yifat,cached label: UNVERIFIED
+יפתח,Yiftah,cached label: UNVERIFIED
+ינון,Yinon,cached label: UNVERIFIED
+יראון,Yir'on,cached label: UNVERIFIED
+ישעי,Yish'i,cached label: UNVERIFIED
 "ייט""ב",Yitav,manual override
 יצהר,Yitzhar,manual override
-יזרעאל,Yizreel,cached label: review
-יודפת,Yodfat,cached label: review
-יונתן,Yonatan,cached label: review
-יקנעם עילית,Yokneam Illit,cached label: review
+יזרעאל,Yizreel,cached label: UNVERIFIED
+יודפת,Yodfat,cached label: UNVERIFIED
 יקנעם (מושבה),Yokneam (Moshava),manual override
-יושיביה,Yoshivia,cached label: review
-יטבתה,Yotvata,cached label: review
-יובל,Yuval,cached label: review
-יובלים,Yuvalim,cached label: review
-צפרירים,Zafririm,cached label: review
-צפריה,Tzafria,cached label: review
-זנוח,Zanoah,cached label: review
-זרזיר,Zarzir,cached label: review
-זבדיאל,Zavdiel,cached label: review
-צאלים,Tze'elim,cached label: review
-צפת,Safed,cached label: review
-זכריה,Zekharia,cached label: review
-צלפון,Tzelafon,cached label: review
-זמר,Zemer,cached label: review
-זרחיה,Zrahia,cached label: review
-זרועה,Zru'a,cached label: review
-צרופה,Tzrufa,cached label: review
-זיתן,Zeitan,cached label: review
-זכרון יעקב,Zichron Yaakov,cached label: review
-זמרת,Zimrat,cached label: review
-ציפורי,Tzippori,cached label: review
-זיקים,Zikim,cached label: review
-צבעון,Ziv'on,cached label: review
-צופר,Tzofar,cached label: review
-צופית,Tsofit,cached label: review
-צופיה,Tzofiya,cached label: review
-צוחר,Tzohar,cached label: review
-זוהר,Zohar,cached label: review
-צרעה,Zorah,cached label: review
-צובה,Tzova,cached label: review
-צופים,Tzufim,manual override
-צור הדסה,Tzur Hadassah,cached label: review
-צור משה,Tzur Moshe,cached label: review
-צור נתן,Tzur Natan,cached label: review
-צור יצחק,Tzur Yitzhak,cached label: review
-צוריאל,Tzuriel,cached label: review
-צורית,Tzurit,cached label: review
-צביה,Tzvia,manual override
-סנסנה,Sansana,manual override
-אירוס,Irus,manual override
-אליאב,Eliav,cached label: review
-כרמי קטיף,Karmei Katif,cached label: review
-שבי דרום,Shavei Darom,manual override
-נמרוד,Nimrod,manual override
-רחלים,Rehelim,manual override
-גני מודיעין,Ganei Modi'in,cached label: review
-עמיחי,Amichai,cached label: review
-מבואות יריחו,Mevo'ot Yericho,manual override
-שיזף,Shezaf,cached label: review
+יקנעם עילית,Yokneam Illit,cached label: UNVERIFIED
+יונתן,Yonatan,cached label: UNVERIFIED
+יושיביה,Yoshivia,cached label: UNVERIFIED
+יטבתה,Yotvata,cached label: UNVERIFIED
+יובל,Yuval,cached label: UNVERIFIED
+יובלים,Yuvalim,cached label: UNVERIFIED
+צפרירים,Zafririm,cached label: UNVERIFIED
+זנוח,Zanoah,cached label: UNVERIFIED
+זרזיר,Zarzir,cached label: UNVERIFIED
+זבדיאל,Zavdiel,cached label: UNVERIFIED
+זיתן,Zeitan,cached label: UNVERIFIED
+זכריה,Zekharia,cached label: UNVERIFIED
+זמר,Zemer,cached label: UNVERIFIED
+זכרון יעקב,Zichron Yaakov,cached label: UNVERIFIED
+זיקים,Zikim,cached label: UNVERIFIED
+זמרת,Zimrat,cached label: UNVERIFIED
+צבעון,Ziv'on,cached label: UNVERIFIED
+זוהר,Zohar,cached label: UNVERIFIED
+צרעה,Zorah,cached label: UNVERIFIED
+זרחיה,Zrahia,cached label: UNVERIFIED
+זרועה,Zru'a,cached label: UNVERIFIED
