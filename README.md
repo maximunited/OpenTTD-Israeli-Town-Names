@@ -1,58 +1,47 @@
 # Israeli Town Names for OpenTTD
 
-Originally created by ZvikaZ: https://github.com/ZvikaZ/OpenTTD-Israeli-Town-Names
+Originally created by [ZvikaZ](https://github.com/ZvikaZ/OpenTTD-Israeli-Town-Names). This fork preserves the original Hebrew NewGRF and adds a separate English variant.
 
-The original Hebrew NewGRF is preserved. This fork adds tooling for a separate English variant, with its own GRFID and town-name style.
+## Translation data and status
 
-## Status and translation quality
+The repository includes `english_names_cache.json`, contributed in commit `352c8d9`, and `english_name_overrides.json`, migrated from that commit's complete `NAME_OVERRIDES` dictionary. Overrides win over cached labels. The migration test compares the JSON against the historical Python literal, without executing historical code.
 
-The Hebrew source is buildable directly. The English generator requires translation data: your existing `english_names_cache.json` and optional `english_name_overrides.json`. These are not bundled here. A fresh clone cannot yet build the full English set without supplying translations. CI builds Hebrew only; it does not claim to validate an English name database.
+Cached labels remain unverified candidates, not an authoritative gazetteer. The overrides preserve previous corrections; migration does not certify every spelling. Review `town_names_review.csv` before releasing. No network lookup or automatic transliteration is performed. Missing names fail generation instead of being guessed.
 
-Cached English labels are unverified candidates, not authoritative locality matches. Identical Hebrew labels can refer to unrelated entities. Review the bilingual CSV before publishing. No automatic transliteration or live Wikidata lookup is performed. Missing names fail generation rather than silently producing bad names.
+## Build on Windows (PowerShell)
 
-## Build (PowerShell)
-
-Install Python 3.12 or newer, then from the repository root:
+Use Python 3.12 or newer. From the repository root:
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-build.txt
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+if ($LASTEXITCODE -ne 0) { throw 'Tests failed' }
+.\.venv\Scripts\python.exe .\make_english.py --amnon
+if ($LASTEXITCODE -ne 0) { throw 'Generation failed; do not compile stale output' }
 .\.venv\Scripts\nmlc.exe -c --grf israeli_town_names_hebrew.grf israel.nml
+if ($LASTEXITCODE -ne 0) { throw 'Hebrew build failed' }
+.\.venv\Scripts\nmlc.exe -c --lang-dir lang_english --grf israeli_town_names_english.grf israel_english.nml
+if ($LASTEXITCODE -ne 0) { throw 'English build failed' }
 ```
 
-Using explicit virtual-environment executable paths avoids PATH and activation-policy problems. On Linux/macOS use `.venv/bin/python` and `.venv/bin/nmlc` instead.
+Explicit executable paths avoid PATH and PowerShell activation-policy issues. On Linux/macOS use `.venv/bin/python` and `.venv/bin/nmlc`.
 
-### English variant
+`--amnon` selects the spelling Amnon for אמנון. Omit it to use the data's spelling. The CLI spelling preference wins over cache and JSON overrides. For other corrections, edit `english_name_overrides.json`, or pass `--overrides path/to/alternative.json` to replace the default override file.
 
-Place your existing cache beside `make_english.py`. Add reviewed full-name corrections in `english_name_overrides.json`, a UTF-8 JSON object:
+The generator handles escaped quotes and ignores commented-out entries. It changes only the generated variant's identity from `ZH\01\01` to `ZH\01\02` and renames the internal `real` block. Original Hebrew source remains unchanged. NML GRF version fields and display versions in `custom_tags.txt` serve different purposes.
 
-```json
-{
-  "אמנון": "Amnon",
-  "אפיקים": "Afikim",
-  "דבוריה": "Dabburiyya",
-  "ענב": "Enav",
-  "גבעת חיים (איחוד)": "Givat Haim (Ihud)",
-  "כפר חב\"ד": "Kfar Chabad"
-}
-```
-
-Choose a consistent spelling policy; English variants do not necessarily identify different places. Manual overrides take precedence over cached labels. Duplicate JSON keys and invalid translations are rejected.
+## Review
 
 ```powershell
-.\.venv\Scripts\python.exe .\make_english.py
-# Stop if generation failed. Do not compile stale output.
-if ($LASTEXITCODE -ne 0) { throw 'English generation failed' }
-.\.venv\Scripts\nmlc.exe -c --lang-dir lang_english --grf israeli_town_names_english.grf israel_english.nml
 Invoke-Item .\town_names_review.csv
 ```
 
-The generator handles escaped quotation marks, excludes commented-out entries, and writes a review report even when names are missing. It changes GRFID `ZH\01\01` to `ZH\01\02` without modifying the original source. The numeric GRF format version in NML and the display version in `custom_tags.txt` are separate concepts.
+The report distinguishes manual overrides, unverified cached labels, CLI spelling preferences and unresolved names. Successful generation checks coverage, not factual correctness of every locality match. Add the Hebrew name, English spelling and source when proposing corrections.
 
-## Install and select
+## Install
 
-Use the installation you actually launch. Steam: Library > OpenTTD > Manage > Browse local files. Create a `newgrf` subfolder there and copy the compiled English GRF into it. Do not assume Steam is installed under Program Files. For example, using the location found on your machine:
+Use the installation you actually launch. In Steam choose Manage > Browse local files, create its `newgrf` directory and copy the English GRF there. Example for the installation used during development:
 
 ```powershell
 $grfDir = "$env:USERPROFILE\Steam\steamapps\common\OpenTTD\newgrf"
@@ -60,16 +49,18 @@ New-Item -ItemType Directory -Force $grfDir | Out-Null
 Copy-Item .\israeli_town_names_english.grf $grfDir -Force
 ```
 
-In OpenTTD 15.3: New Game > NewGRF Settings > Rescan files. Add `Israeli Town Names (English)` from the inactive list, then select `Israeli (English)` under Town names before generating the map. Online Content lists published downloads, not this unpublished local build. Restart the game if necessary.
+In OpenTTD 15.3, open New Game > NewGRF Settings > Rescan files. Add Israeli Town Names (English), return to world generation and choose Israeli (English) under Town names. Online Content does not list unpublished local builds. Restart if necessary.
 
-Existing saved town names are not automatically translated. To ensure Jerusalem or Tel Aviv belongs to a large town, use a scenario or rename towns after generation; name-selection weights do not reserve names for large cities.
+Existing saved town names are not automatically translated. Name weights cannot reserve Jerusalem or Tel Aviv for large towns; use scenarios or rename towns after generation.
 
-## Development
+## Tests and CI
 
-Run `python -m unittest discover -s tests -v`. Keep compiled GRFs, local caches and review reports out of commits. For a reproducible English release, contribute reviewed translation data with source/provenance notes; do not publish a cache as verified data. Preserve upstream attribution and Hebrew compatibility.
+Run `python -m unittest discover -s tests -v`. The historical migration test requires Git and full history; shallow clones should fetch the historical commit first. CI checks out full history, runs parser and integration tests, regenerates English with `--amnon`, compiles both GRFs and uploads them with the review CSV. Consult the actual Actions result before claiming the current build passes.
 
-Before pulling remote changes into an existing working tree, back up or commit untracked local scripts: they may conflict with newly tracked files.
+Some generated reports and NML were already tracked in the initial English commit. Ignore rules do not untrack those files. Regenerate English before compiling; tracked generated output can lag behind the source/data. The existing cache is retained for reproducibility, not treated as reviewed data.
 
-## License
+Before pulling into your existing working tree, commit or back up local edits and untracked files. Do not force-reset away local translation work.
 
-No standalone license file was present in the inspected upstream tree. This fork does not assume or assign a license to upstream code or datasets. Clarify licensing and translation-data redistribution rights with the relevant authors before publishing releases.
+## License and attribution
+
+No standalone license file was present in the inspected upstream tree. Do not infer a license for upstream code or redistribute datasets without clarifying applicable rights and attribution. Preserve upstream author credit. See CONTRIBUTING.md for contribution practices.

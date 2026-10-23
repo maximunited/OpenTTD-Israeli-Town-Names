@@ -1,4 +1,4 @@
-"""Generate English NML from explicit translations; never guess missing names."""
+"""Generate English NML from committed translations; never guess missing names."""
 from pathlib import Path
 import argparse
 import csv
@@ -42,6 +42,13 @@ def read_mapping(path):
     return result
 
 
+def resolve_translations(cache, overrides, amnon=False):
+    translations = cache | overrides
+    if amnon:
+        translations['אמנון'] = 'Amnon'
+    return translations
+
+
 def generate(source, translations):
     source = strip_comments(source)
     names = list(dict.fromkeys(decode(m[1]) for m in TEXT.finditer(source)))
@@ -62,17 +69,18 @@ def generate(source, translations):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--overrides', type=Path, default=BASE / 'english_name_overrides.json')
+    parser.add_argument('--amnon', action='store_true', help='Prefer Amnon to the cached spelling for אמנון')
     args = parser.parse_args()
     cache = read_mapping(BASE / 'english_names_cache.json')
     overrides = read_mapping(args.overrides)
-    translations = cache | overrides
+    translations = resolve_translations(cache, overrides, args.amnon)
     source = (BASE / 'israel.nml').read_text(encoding='utf-8-sig')
     names = list(dict.fromkeys(decode(m[1]) for m in TEXT.finditer(strip_comments(source))))
     with (BASE / 'town_names_review.csv').open('w', encoding='utf-8-sig', newline='') as handle:
         writer = csv.writer(handle)
         writer.writerow(['hebrew', 'english', 'source'])
         for name in names:
-            origin = 'manual override' if name in overrides else 'cached label: UNVERIFIED' if name in cache else 'UNRESOLVED'
+            origin = 'CLI spelling preference' if args.amnon and name == 'אמנון' else 'manual override' if name in overrides else 'cached label: UNVERIFIED' if name in cache else 'UNRESOLVED'
             writer.writerow([name, translations.get(name, ''), origin])
     destination = BASE / 'israel_english.nml'
     try:
