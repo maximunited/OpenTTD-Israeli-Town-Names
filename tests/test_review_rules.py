@@ -68,6 +68,30 @@ class MappingTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Empty English label'):
             resolve_mapping({'א': '   '}, {}, {}, {})
 
+    def test_resolution_order_preference_override_cache_cbs(self):
+        cbs = {'א': 'CBS_VALUE'}
+        cache = {'א': 'CACHE_VALUE'}
+        override = {'א': 'OVERRIDE_VALUE'}
+        preferences = {'א': 'PREFERENCE_VALUE'}
+        result = resolve_mapping(cbs, cache, override, preferences)
+        self.assertEqual(result['א'], 'PREFERENCE_VALUE')
+
+    def test_resolution_no_preference_keeps_override(self):
+        cbs = {'א': 'CBS_VALUE'}
+        cache = {'א': 'CACHE_VALUE'}
+        override = {'א': 'OVERRIDE_VALUE'}
+        result = resolve_mapping(cbs, cache, override, {})
+        self.assertEqual(result['א'], 'OVERRIDE_VALUE')
+
+    def test_resolution_empty_layers_drop(self):
+        result = resolve_mapping({}, {}, {}, {})
+        self.assertEqual(result, {})
+
+    def test_invalid_layer_raises(self):
+        with self.assertRaisesRegex(ValueError, 'CBS mapping must be a dictionary'):
+            resolve_mapping('not a dict', {}, {}, {})
+
+
 
 class LabelTests(unittest.TestCase):
     def test_leading_apostrophe_normalized(self):
@@ -89,3 +113,48 @@ class LabelTests(unittest.TestCase):
     def test_non_text_rejected(self):
         with self.assertRaises(ValueError):
             normalize_english_label(None)
+
+    def test_normalize_leading_apostrophe(self):
+        self.assertEqual(normalize_english_label("'TARABIN AS-SANI"), 'TARABIN AS-SANI')
+
+    def test_normalize_internal_apostrophe_preserved(self):
+        self.assertEqual(normalize_english_label("MA'YAN ZEVI"), "MA'YAN ZEVI")
+
+    def test_normalize_whitespace(self):
+        self.assertEqual(normalize_english_label('  ABU  AMMAR  '), 'ABU AMMAR')
+
+    def test_normalize_missing_space_before_parenthesis(self):
+        self.assertEqual(normalize_english_label('MERHAVYA(QIBBUZ)'), 'MERHAVYA (QIBBUZ)')
+        self.assertEqual(normalize_english_label("BEN SHEMEN(K.NO'AR)"), "BEN SHEMEN (K.NO'AR)")
+
+    def test_normalize_existing_space_before_parenthesis_preserved(self):
+        self.assertEqual(normalize_english_label("TAMRA (YIZRE'EL)"), "TAMRA (YIZRE'EL)")
+
+    def test_normalize_trailing_apostrophe(self):
+        self.assertEqual(normalize_english_label("TARABIN AS-SANI'"), 'TARABIN AS-SANI')
+
+    def test_normalize_non_string_raises(self):
+        with self.assertRaises(ValueError):
+            normalize_english_label(123)
+
+    def test_normalize_no_double_space(self):
+        self.assertEqual(normalize_english_label('A  B'), 'A B')
+
+    def test_validate_english_label_empty(self):
+        with self.assertRaisesRegex(ValueError, 'Empty English label'):
+            validate_english_label('   ')
+
+    def test_validate_english_label_hebrew_rejected(self):
+        with self.assertRaisesRegex(ValueError, 'Hebrew characters'):
+            validate_english_label('English עברית')
+
+    def test_validate_english_label_control_rejected(self):
+        with self.assertRaisesRegex(ValueError, 'Control characters'):
+            validate_english_label('bad\x00name')
+
+    def test_validate_english_label_ok(self):
+        self.assertEqual(validate_english_label("MA'YAN ZEVI"), "MA'YAN ZEVI")
+
+    def test_validate_returns_normalized(self):
+        self.assertEqual(validate_english_label("'  ABU  AMMAR  '"), 'ABU AMMAR')
+

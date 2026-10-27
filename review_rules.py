@@ -58,11 +58,21 @@ def classify_candidate(row, playable_names):
 
 
 def resolve_mapping(cbs, cache, overrides, preferences):
-    layers = [('CBS', cbs), ('cache', cache), ('override', overrides), ('preference', preferences)]
+    """Resolve English labels across CBS, cache, override, and preference layers.
+    Precedence (highest wins): preference > override > cache > CBS.
+    Each layer is applied only where a label is not already resolved.
+    """
+    layers = [
+        ('preference', preferences),
+        ('override', overrides),
+        ('cache', cache),
+        ('CBS', cbs),
+    ]
     result = {}
     for layer, mapping in layers:
         if not isinstance(mapping, dict):
             raise ValueError(f'{layer} mapping must be a dictionary')
         for hebrew, english in mapping.items():
-            result[hebrew] = validate_english_label(english, hebrew)
+            if hebrew not in result:
+                result[hebrew] = validate_english_label(english, hebrew)
     return result
