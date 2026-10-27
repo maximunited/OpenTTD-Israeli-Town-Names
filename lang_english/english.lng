@@ -1,5 +1,5 @@
 ##grflangid 0x01
 
-STR_GRF_NAME :Israeli Town Names (English)
-STR_GRF_DESCRIPTION :Israeli locality names in English. Separate from the original Hebrew set.
+STR_GRF_NAME :Israeli Town Names (English) {VERSION}
+STR_GRF_DESCRIPTION :Israeli town names in English
 STR_STYLES :Israeli (English)
