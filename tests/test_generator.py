@@ -53,9 +53,8 @@ class GeneratorTests(unittest.TestCase):
                 json.dump(data, handle, ensure_ascii=False, indent=2)
             loaded = read_mapping(path)
             self.assertEqual(loaded, data)
-            with path.open('w', encoding='utf-8') as handle:
-                json.dump([('א', 'Amnon'), ('א', 'Amnon')], handle)
-            with self.assertRaises(ValueError):
+            path.write_text('{"א": "Amnon", "א": "Other"}', encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'duplicate key'):
                 read_mapping(path)
 
 
