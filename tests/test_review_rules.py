@@ -94,26 +94,6 @@ class MappingTests(unittest.TestCase):
 
 
 class LabelTests(unittest.TestCase):
-    def test_leading_apostrophe_normalized(self):
-        self.assertEqual(normalize_english_label("'TARABIN AS-SANI"), 'TARABIN AS-SANI')
-
-    def test_internal_apostrophe_preserved(self):
-        self.assertEqual(normalize_english_label("MA'YAN ZEVI"), "MA'YAN ZEVI")
-
-    def test_whitespace_normalized(self):
-        self.assertEqual(normalize_english_label('  ABU  AMMAR  '), 'ABU AMMAR')
-
-    def test_missing_space_before_parenthesis_added(self):
-        self.assertEqual(normalize_english_label('MERHAVYA(QIBBUZ)'), 'MERHAVYA (QIBBUZ)')
-        self.assertEqual(normalize_english_label("BEN SHEMEN(K.NO'AR)"), "BEN SHEMEN (K.NO'AR)")
-
-    def test_existing_space_before_parenthesis_preserved(self):
-        self.assertEqual(normalize_english_label("TAMRA (YIZRE'EL)"), "TAMRA (YIZRE'EL)")
-
-    def test_non_text_rejected(self):
-        with self.assertRaises(ValueError):
-            normalize_english_label(None)
-
     def test_normalize_leading_apostrophe(self):
         self.assertEqual(normalize_english_label("'TARABIN AS-SANI"), 'TARABIN AS-SANI')
 

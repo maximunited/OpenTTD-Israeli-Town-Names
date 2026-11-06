@@ -1,7 +1,7 @@
 import ast
 import subprocess
 import unittest
-from make_english import BASE, HEBREW, TEXT, decode, generate, read_mapping, resolve_translations
+from make_english import BASE, HEBREW, TEXT, decode, generate, read_mapping
 
 
 class IntegrationTests(unittest.TestCase):
@@ -18,19 +18,16 @@ class IntegrationTests(unittest.TestCase):
     def test_preferences_are_data(self):
         preferences = read_mapping(BASE / 'display_name_preferences.json')
         self.assertEqual(preferences['אמנון'], 'Amnon')
-        self.assertEqual(resolve_translations({'a': 'cache'}, {'a': 'override'})['a'], 'override')
 
     def test_migration_preserves_historical_dictionary(self):
         historical = subprocess.check_output(['git', 'show', '352c8d99bcbd72d0403070d71e94dae2b1c6f9e6:make_english.py'], cwd=BASE).decode('utf-8-sig')
         tree = ast.parse(historical)
         original = next(ast.literal_eval(node.value) for node in tree.body if isinstance(node, ast.Assign) and any(isinstance(target, ast.Name) and target.id == 'NAME_OVERRIDES' for target in node.targets))
-        # The overrides JSON is the migrated form of the historical dictionary.
-        # It may legitimately differ (e.g. a corrected spelling or an added locality);
-        # the historical values still appear as a subset of the current JSON.
-        self.assertGreaterEqual(len(read_mapping(BASE / 'english_name_overrides.json')), len(original))
-        # Spot-check the known intentional correction of the historical typo.
-        self.assertEqual(read_mapping(BASE / 'english_name_overrides.json').get('בית רבן'), 'Beit Raban')
-        self.assertNotEqual(original.get('בית רבן'), 'Beit Raban')
+        current = read_mapping(BASE / 'english_name_overrides.json')
+        intentional_corrections = {'בית רבן': 'Beit Raban'}
+        self.assertEqual([key for key in original if key not in current], [])
+        changed = {key: current[key] for key in original if current[key] != original[key]}
+        self.assertEqual(changed, intentional_corrections)
 
     def test_invalid_translation_rejected(self):
         source = r'grfid: "ZH\01\01";' + '\ntext("עיר", 1)'

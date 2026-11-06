@@ -60,7 +60,7 @@ No new playable town, including Trump Heights, is automatically added by this fe
 
 ## Tests
 
-Tests cover parser quotes/comments, full committed name coverage, historical override migration, data-driven preferences, deterministic generation, invalid translations, paging, repeated pages/duplicates, mixed vintage, schema rejection, failed-refresh preservation and ambiguous source-name matches. CI compiles both GRFs offline. Inspect the actual Actions results before asserting new code passes. Future tests should add recorded live CBS fixtures and exercise retry/HTTP behavior; mocked paging tests alone do not validate the live service.
+Tests cover parser quotes/comments, full committed name coverage, exact historical override migration (only listed intentional corrections may differ), review/candidate CSV output, `data/cbs_exclusions.json` validation, data-driven preferences, deterministic generation, invalid translations, paging, repeated pages/duplicates, mixed vintage, schema rejection, failed-refresh preservation and ambiguous source-name matches. CI compiles both GRFs offline. Inspect the actual Actions results before asserting new code passes. Future tests should add recorded live CBS fixtures and exercise retry/HTTP behavior; mocked paging tests alone do not validate the live service.
 
 ## Install
 
