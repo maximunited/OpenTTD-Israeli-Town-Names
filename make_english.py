@@ -3,6 +3,7 @@ from pathlib import Path
 import argparse
 import csv
 import json
+import logging
 import re
 from cbs_directory import refresh, translations_from_snapshot
 from review_rules import classify_candidate, normalize_english_label, resolve_mapping
@@ -44,13 +45,9 @@ def read_mapping(path):
     return result
 
 
-def resolve_translations(cache, overrides):
-    return cache | overrides
-
-
 def generate(source, translations):
+    names = source_names(source)
     source = strip_comments(source)
-    names = list(dict.fromkeys(decode(m[1]) for m in TEXT.finditer(source)))
     if not names:
         raise ValueError('No town names found')
     missing = [name for name in names if name not in translations]
@@ -68,7 +65,53 @@ def generate(source, translations):
     return re.sub(r'town_names\(real(?=\s*[,\)])', 'town_names(real_english', output)
 
 
+def source_names(source):
+    return list(dict.fromkeys(decode(m[1]) for m in TEXT.finditer(strip_comments(source))))
+
+
+def read_exclusions(path):
+    if not path.exists():
+        return {}
+    exclusions = json.loads(path.read_text(encoding='utf-8-sig'))
+    if not isinstance(exclusions, dict):
+        raise ValueError(f'{path}: expected a JSON object')
+    for code, entry in exclusions.items():
+        if not code.isdigit() or not isinstance(entry, dict) or not isinstance(entry.get('reason'), str) or not entry['reason'].strip():
+            raise ValueError(f'{path}: invalid exclusion for {code!r}')
+    return exclusions
+
+
+def label_origin(name, layers):
+    for label, mapping in layers:
+        if name in mapping:
+            return label
+    return 'UNRESOLVED'
+
+
+def write_review_csv(path, names, translations, layers):
+    with path.open('w', encoding='utf-8-sig', newline='') as handle:
+        writer = csv.writer(handle)
+        writer.writerow(['hebrew', 'english', 'source'])
+        for name in sorted(names, key=lambda n: (translations.get(n, '').casefold(), n)):
+            writer.writerow([name, translations.get(name, ''), label_origin(name, layers)])
+
+
+def write_candidates_csv(path, records, playable_names, exclusions):
+    existing = set(playable_names)
+    with path.open('w', encoding='utf-8-sig', newline='') as handle:
+        writer = csv.writer(handle)
+        writer.writerow(['id', 'year', 'hebrew', 'english', 'status'])
+        for row in records:
+            if row['name_heb'] in existing:
+                continue
+            english = normalize_english_label(row['name_eng']) if row['name_eng'] is not None else ''
+            exclusion = exclusions.get(str(row['id']))
+            status = f"EXCLUDED: {exclusion['reason']}" if exclusion else classify_candidate(row, existing)
+            writer.writerow([row['id'], row['year'], row['name_heb'], english, status])
+
+
 def main():
+    logging.basicConfig(level=logging.INFO, format='%(levelname)s %(name)s: %(message)s')
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--overrides', type=Path, default=BASE / 'english_name_overrides.json')
     parser.add_argument('--preferences', type=Path, default=BASE / 'display_name_preferences.json')
@@ -84,36 +127,20 @@ def main():
     cache = read_mapping(BASE / 'english_names_cache.json')
     overrides = read_mapping(args.overrides)
     preferences = read_mapping(args.preferences)
-    exclusions_path = BASE / 'data' / 'cbs_exclusions.json'
-    exclusions = (
-        json.loads(exclusions_path.read_text(encoding='utf-8-sig'))
-        if exclusions_path.exists()
-        else {}
-    )
+    exclusions = read_exclusions(BASE / 'data' / 'cbs_exclusions.json')
     translations = resolve_mapping(cbs, cache, overrides, preferences)
     source = (BASE / 'israel.nml').read_text(encoding='utf-8-sig')
-    names = list(dict.fromkeys(decode(m[1]) for m in TEXT.finditer(strip_comments(source))))
-    with (BASE / 'town_names_review.csv').open('w', encoding='utf-8-sig', newline='') as handle:
-        writer = csv.writer(handle)
-        writer.writerow(['hebrew', 'english', 'source'])
-        for name in sorted(names, key=lambda n: (translations.get(n, '').casefold(), n)):
-            origin = 'display preference' if name in preferences else 'manual override' if name in overrides else 'cached label: UNVERIFIED' if name in cache else 'CBS exact-name candidate: REVIEW' if name in cbs else 'UNRESOLVED'
-            writer.writerow([name, translations.get(name, ''), origin])
+    names = source_names(source)
+    layers = [
+        ('display preference', preferences),
+        ('manual override', overrides),
+        ('cached label: UNVERIFIED', cache),
+        ('CBS exact-name candidate: REVIEW', cbs),
+    ]
+    write_review_csv(BASE / 'town_names_review.csv', names, translations, layers)
     if snapshot_path.exists():
         records = json.loads(snapshot_path.read_text(encoding='utf-8'))['records']
-        existing = set(names)
-        with (BASE / 'data' / 'cbs_candidates.csv').open('w', encoding='utf-8-sig', newline='') as handle:
-            writer = csv.writer(handle)
-            writer.writerow(['id', 'year', 'hebrew', 'english', 'status'])
-            for row in records:
-                if row['name_heb'] not in existing:
-                    english = normalize_english_label(row['name_eng']) if row['name_eng'] is not None else ''
-                    exclusion = exclusions.get(str(row['id']))
-                    if exclusion:
-                        status = f"EXCLUDED: {exclusion['reason']}"
-                    else:
-                        status = classify_candidate(row, existing)
-                    writer.writerow([row['id'], row['year'], row['name_heb'], english, status])
+        write_candidates_csv(BASE / 'data' / 'cbs_candidates.csv', records, names, exclusions)
     output = generate(source, translations)
     (BASE / 'israel_english.nml').write_text(output, encoding='utf-8')
     print(f'Wrote English NML for {len(names)} unique active names; alphabetical review CSV written. Generation order preserved.')

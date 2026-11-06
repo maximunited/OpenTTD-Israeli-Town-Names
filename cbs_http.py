@@ -14,7 +14,7 @@ def read_json(url, opener=None, sleep=None, attempts=3):
     sleep = sleep or time.sleep
     request = Request(url, headers={'User-Agent': USER_AGENT, 'Accept': 'application/json'})
     for attempt in range(attempts):
-        LOG.warning('CBS request attempt %s/%s: %s', attempt + 1, attempts, url)
+        LOG.info('CBS request attempt %s/%s: %s', attempt + 1, attempts, url)
         try:
             with opener(request, timeout=30) as response:
                 raw = response.read()
@@ -59,5 +59,5 @@ def diagnose():
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.WARNING)
+    logging.basicConfig(level=logging.INFO)
     diagnose()

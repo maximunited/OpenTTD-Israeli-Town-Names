@@ -1,8 +1,9 @@
 import json
+import tempfile
 import unittest
 from pathlib import Path
 
-from make_english import BASE, decode, generate, read_mapping, strip_comments, TEXT
+from make_english import decode, encode, generate, read_mapping, strip_comments, TEXT
 
 
 class GeneratorTests(unittest.TestCase):
@@ -45,18 +46,62 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(output, generate(source, {'עיר': 'Town'}))
 
     def test_write_mapping_round_trip(self):
-        path = BASE / 'test_mapping.json'
-        data = {'א': 'Amnon', 'ב': 'Beit Zaid'}
-        with path.open('w', encoding='utf-8') as handle:
-            json.dump(data, handle, ensure_ascii=False, indent=2)
-        loaded = read_mapping(path)
-        self.assertEqual(loaded, data)
-        # duplicate keys must be rejected.
-        with path.open('w', encoding='utf-8') as handle:
-            json.dump([('א', 'Amnon'), ('א', 'Amnon')], handle)
-        with self.assertRaises(ValueError):
-            read_mapping(path)
-        path.unlink()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'test_mapping.json'
+            data = {'א': 'Amnon', 'ב': 'Beit Zaid'}
+            with path.open('w', encoding='utf-8') as handle:
+                json.dump(data, handle, ensure_ascii=False, indent=2)
+            loaded = read_mapping(path)
+            self.assertEqual(loaded, data)
+            with path.open('w', encoding='utf-8') as handle:
+                json.dump([('א', 'Amnon'), ('א', 'Amnon')], handle)
+            with self.assertRaises(ValueError):
+                read_mapping(path)
+
+
+    def test_strip_block_comment(self):
+        self.assertEqual(strip_comments('a /* hidden */ b'), 'a  b')
+
+    def test_strip_line_comment(self):
+        self.assertEqual(strip_comments('a // hidden\nb'), 'a \nb')
+
+    def test_strip_preserves_strings(self):
+        self.assertEqual(strip_comments('"/* not a comment */"'), '"/* not a comment */"')
+
+    def test_strip_multiline_block_preserves_line_count(self):
+        result = strip_comments('a\n/* line1\nline2 */\nb')
+        self.assertEqual(result.count('\n'), 3)
+
+    def test_encode_decode_round_trip(self):
+        for value in ['plain', 'with "quotes"', 'back\\slash', 'both\\"mixed']:
+            self.assertEqual(decode(encode(value)), value)
+
+    def test_duplicate_names_deduplicated(self):
+        source = r'grfid: "ZH\01\01";' + '\ntext("עיר", 1)\ntext("עיר", 1)'
+        output = generate(source, {'עיר': 'Town'})
+        self.assertEqual(output.count('text("Town", 1)'), 2)
+
+    def test_no_names_raises(self):
+        source = r'grfid: "ZH\01\01";' + '\n// no names'
+        with self.assertRaisesRegex(ValueError, 'No town names found'):
+            generate(source, {})
+
+    def test_read_mapping_missing_file(self):
+        self.assertEqual(read_mapping(Path('/nonexistent/path.json')), {})
+
+    def test_read_mapping_rejects_non_object(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'bad.json'
+            path.write_text('["a list"]', encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'expected a JSON object'):
+                read_mapping(path)
+
+    def test_read_mapping_rejects_hebrew_value(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / 'bad.json'
+            path.write_text('{"א": "עברית"}', encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'invalid English translation'):
+                read_mapping(path)
 
 
 if __name__ == '__main__':
