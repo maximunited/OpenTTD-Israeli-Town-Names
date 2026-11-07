@@ -10,10 +10,10 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements-build.txt
@@ -26,19 +26,19 @@ jobs:
         run: python cbs_http.py 2>&1 | tee cbs-diagnostics.txt
       - name: Upload CBS diagnostics
         if: failure() && steps.cbs.outcome == 'failure'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: cbs-diagnostics
           path: cbs-diagnostics.txt
       - name: Build all GRFs with the refreshed data
         run: python build.py
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: cbs-review
           path: |
             data/
             town_names_review.csv
-      - uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v8
         with:
           branch: automation/cbs-directory
           commit-message: Refresh CBS locality snapshot for review
