@@ -107,13 +107,15 @@ Do this before every upload; it takes two minutes.
 
 ## 5. Release on GitHub
 
-After the pull request is merged into `master`:
+After the pull request is merged into `master`, tag the version you set in
+step 2. With 0.3.0 from the example:
 
 ```powershell
 git switch master
 git pull
-git tag v0.2.0
-git push origin v0.2.0
+python build.py --print-version   # prints the version to tag, e.g. 0.3.0
+git tag v0.3.0
+git push origin v0.3.0
 ```
 
 The tag must be `v` + the version in `custom_tags.txt`, or the release fails.
@@ -159,7 +161,7 @@ Rules:
 | Problem | Fix |
 |---|---|
 | Tests fail with "must have version: …" | Make the three version places agree (step 2). |
-| Release workflow: "Tag … does not match VERSION" | Delete the tag (`git push --delete origin v0.2.0`, `git tag -d v0.2.0`) and tag the right version. |
+| Release workflow: "Tag … does not match VERSION" | Delete the wrong tag (`git push --delete origin vX.Y.Z`, `git tag -d vX.Y.Z`) and tag the version printed by `python build.py --print-version`. |
 | `nmlc not found` | Install the build requirements (step 3). |
 | BaNaNaS says the ID belongs to someone else | You uploaded the Hebrew GRF; see the table at the top. |
 | Hebrew shows as boxes or `?` | Turn off "Use traditional sprite font" in OpenTTD. |
