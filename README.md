@@ -6,11 +6,11 @@ Based on the original Hebrew set by [ZvikaZ](https://github.com/ZvikaZ/OpenTTD-I
 
 ## Variants
 
-| NewGRF | Town name styles | GRF ID |
-|---|---|---|
-| Israeli Town Names (English) | Israeli (English) | `MA\01\01` |
-| Israeli Town Names (Hebrew + English) | Israeli (Hebrew), Israeli (English) | `MA\01\02` |
-| Israeli town names (original Hebrew set) | Israeli | `ZH\01\01` |
+| NewGRF | Town name styles | GRF ID | BaNaNaS |
+|---|---|---|---|
+| Israeli Town Names (Hebrew + English) | Israeli (Hebrew), Israeli (English) | `MA\01\02` | [4d410102](https://bananas.openttd.org/package/newgrf/4d410102) |
+| Israeli Town Names (English) | Israeli (English) | `MA\01\01` | [4d410101](https://bananas.openttd.org/package/newgrf/4d410101) |
+| Israeli town names (original Hebrew set) | Israeli | `ZH\01\01` | [5a480101](https://bananas.openttd.org/package/newgrf/5a480101) (by ZvikaZ) |
 
 ## For players
 
