@@ -2,6 +2,7 @@ grf {
 	grfid: "ZH\01\01";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESCRIPTION);
+	url: string(STR_GRF_URL);
 	version: 200;
 	min_compatible_version: 200;
 }

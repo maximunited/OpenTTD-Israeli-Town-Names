@@ -7,7 +7,7 @@ from pathlib import Path
 from build import VARIANTS, changelog_section, package
 from make_english import (
     BASE, TEXT, check_versions, decode, generate, generate_bilingual, grf_version_number,
-    grf_versions, read_mapping, read_release_version, source_names,
+    grf_versions, read_mapping, read_release_version, source_names, strip_comments,
 )
 from review_rules import is_non_town
 
@@ -86,9 +86,18 @@ class PlayableListTests(unittest.TestCase):
 
 
 class PackageTests(unittest.TestCase):
-    def test_variant_lang_dirs_exist(self):
+    def test_variant_lang_files_have_metadata(self):
         for variant, info in VARIANTS.items():
-            self.assertTrue((BASE / info['lang'] / 'english.lng').exists(), variant)
+            text = (BASE / info['lang'] / 'english.lng').read_text(encoding='utf-8')
+            for key in ('STR_GRF_NAME', 'STR_GRF_DESCRIPTION', 'STR_GRF_URL'):
+                self.assertRegex(text, rf'(?m)^{key}\s*:\S', f'{variant}: {key}')
+            self.assertRegex(text, r'(?m)^STR_GRF_URL\s*:https://github\.com/', variant)
+
+    def test_bilingual_embeds_url(self):
+        self.assertIn('url: string(STR_GRF_URL);', generate_bilingual(SOURCE, {'עיר': 'Town', 'כפר "א"': 'Kfar'}))
+
+    def test_committed_source_embeds_url(self):
+        self.assertIn('url: string(STR_GRF_URL);', strip_comments(committed_source()))
 
     def test_package_contents(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -98,7 +107,8 @@ class PackageTests(unittest.TestCase):
             folder, archive = package('bilingual', grf, '0.2.0', dist)
             self.assertEqual(archive.name, 'israeli_town_names_bilingual-0.2.0.zip')
             names = sorted(path.name for path in folder.iterdir())
-            self.assertEqual(names, ['changelog.txt', 'israeli_town_names_bilingual.grf', 'license.txt', 'readme.txt'])
+            # BaNaNaS refuses a license.txt when a standard license such as GPL v2 is selected.
+            self.assertEqual(names, ['changelog.txt', 'israeli_town_names_bilingual.grf', 'readme.txt'])
             readme = (folder / 'readme.txt').read_text(encoding='utf-8')
             self.assertIn('Israeli Town Names (Hebrew + English) 0.2.0', readme)
             self.assertNotIn('{', readme)
