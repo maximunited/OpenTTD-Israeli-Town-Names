@@ -26,8 +26,12 @@ NON_TOWN_MARKERS = (
     'ים המלח',
     'גמ"ל',
     'מחוז',
-    'סואעד',
 )
+
+# CBS locality types: 460 Bedouin tribes, 520 industrial zones and regional centres,
+# 530 statistical areas. Type 510 mixes real villages with camps and institutions,
+# so it is left to the name markers above.
+NON_TOWN_TYPES = frozenset({'460', '520', '530'})
 
 
 def normalize_english_label(value):
@@ -48,11 +52,19 @@ def validate_english_label(value, hebrew=None):
     return value
 
 
-def classify_candidate(row, playable_names):
+def is_non_town(row):
     hebrew = row['name_heb']
-    if hebrew in playable_names:
+    return (
+        str(row.get('locality_type')) in NON_TOWN_TYPES
+        or hebrew.endswith('*')
+        or any(marker in hebrew for marker in NON_TOWN_MARKERS)
+    )
+
+
+def classify_candidate(row, playable_names):
+    if row['name_heb'] in playable_names:
         return 'EXACT PLAYABLE MATCH'
-    if hebrew.endswith('*') or any(marker in hebrew for marker in NON_TOWN_MARKERS):
+    if is_non_town(row):
         return 'NOT A TOWN: REVIEW ELIGIBILITY'
     return 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY'
 

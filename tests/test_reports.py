@@ -1,10 +1,9 @@
 import csv
-import json
 import tempfile
 import unittest
 from pathlib import Path
 
-from make_english import label_origin, read_exclusions, source_names, write_candidates_csv, write_review_csv
+from make_english import label_origin, source_names, write_candidates_csv, write_review_csv
 
 
 def read_csv(path):
@@ -12,8 +11,8 @@ def read_csv(path):
         return list(csv.reader(handle))
 
 
-def record(code, hebrew, english='NAME'):
-    return {'id': code, 'year': '2024', 'name_heb': hebrew, 'name_eng': english}
+def record(code, hebrew, english='NAME', locality_type='310'):
+    return {'id': code, 'year': '2024', 'name_heb': hebrew, 'name_eng': english, 'locality_type': locality_type}
 
 
 class ReportTests(unittest.TestCase):
@@ -43,35 +42,23 @@ class ReportTests(unittest.TestCase):
             ['א', 'zeta', 'cache'],
         ])
 
-    def test_candidates_skip_playable_and_apply_exclusions(self):
+    def test_candidates_list_only_missing_towns(self):
         path = self.root / 'candidates.csv'
         records = [
             record('1', 'תל אביב'),
-            record('2', 'אזור תעשייה'),
+            record('2', 'אזור תעשייה הר-טוב', locality_type='520'),
             record('3', 'יישוב חדש', "'NEW  TOWN"),
             record('4', 'ללא אנגלית', None),
+            record('5', 'אבו עמרה (שבט)', locality_type='460'),
+            record('6', 'הרי יהודה מ"א 26', locality_type='530'),
+            record('7', 'מחנה הילה*', locality_type='510'),
         ]
-        write_candidates_csv(path, records, ['תל אביב'], {'2': {'reason': 'industrial zone'}})
-        rows = read_csv(path)
-        self.assertEqual([row[0] for row in rows[1:]], ['2', '3', '4'])
-        self.assertEqual(rows[1][4], 'EXCLUDED: industrial zone')
-        self.assertEqual(rows[2][3], 'NEW TOWN')
-        self.assertEqual(rows[2][4], 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY')
-        self.assertEqual(rows[3][3], '')
-
-    def test_read_exclusions_missing_file(self):
-        self.assertEqual(read_exclusions(self.root / 'missing.json'), {})
-
-    def test_read_exclusions_rejects_bad_entries(self):
-        path = self.root / 'exclusions.json'
-        for bad in [[], {'abc': {'reason': 'x'}}, {'1': 'x'}, {'1': {}}, {'1': {'reason': ' '}}]:
-            path.write_text(json.dumps(bad), encoding='utf-8')
-            with self.assertRaises(ValueError, msg=bad):
-                read_exclusions(path)
-
-    def test_committed_exclusions_are_valid(self):
-        from make_english import BASE
-        self.assertTrue(read_exclusions(BASE / 'data' / 'cbs_exclusions.json'))
+        write_candidates_csv(path, records, ['תל אביב'])
+        self.assertEqual(read_csv(path), [
+            ['id', 'year', 'locality_type', 'hebrew', 'english'],
+            ['3', '2024', '310', 'יישוב חדש', 'NEW TOWN'],
+            ['4', '2024', '310', 'ללא אנגלית', ''],
+        ])
 
 
 if __name__ == '__main__':

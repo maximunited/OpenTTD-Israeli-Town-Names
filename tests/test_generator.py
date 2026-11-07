@@ -15,7 +15,7 @@ class GeneratorTests(unittest.TestCase):
     def test_generation(self):
         source = r'grfid: "ZH\01\01";' + '\ntown_names(real) { { text("עיר", 1) } }\ntown_names { { town_names(real, 1) } }'
         output = generate(source, {'עיר': 'Town'})
-        self.assertIn(r'grfid: "ZH\01\02";', output)
+        self.assertIn(r'grfid: "MA\01\01";', output)
         self.assertIn('text("Town", 1)', output)
         self.assertIn('town_names(real_english, 1)', output)
 

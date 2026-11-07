@@ -2,8 +2,8 @@ grf {
 	grfid: "ZH\01\01";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESCRIPTION);
-	version: 1;
-	min_compatible_version: 0;
+	version: 200;
+	min_compatible_version: 200;
 }
 
 town_names(real) {
@@ -402,7 +402,6 @@ town_names(real) {
 		text("הסוללים", 1),
 		text("חספין", 1),
 		text("חבצלת השרון", 1),
-		text("הוואשלה (שבט)", 1),
 		text("היוגב", 1),
 		text("חצר בארותיים", 1),
 		text("חצב", 1),

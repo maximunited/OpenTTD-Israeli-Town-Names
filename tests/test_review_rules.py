@@ -1,5 +1,5 @@
 import unittest
-from review_rules import classify_candidate, normalize_english_label, resolve_mapping, validate_english_label
+from review_rules import classify_candidate, is_non_town, normalize_english_label, resolve_mapping, validate_english_label
 
 
 def row(hebrew, english='NAME'):
@@ -45,6 +45,18 @@ class ClassificationTests(unittest.TestCase):
 
     def test_unmatched_settlement_needs_alias_review(self):
         self.assertEqual(classify_candidate(row('תראבין א-צאנע (יישוב)'), set()), 'NOT EXACTLY MATCHED: REVIEW ALIAS/ELIGIBILITY')
+
+    def test_non_town_cbs_types(self):
+        for locality_type in ('460', '520', '530'):
+            self.assertTrue(is_non_town({**row('שם כלשהו'), 'locality_type': locality_type}), locality_type)
+
+    def test_type_510_village_stays_a_town(self):
+        self.assertFalse(is_non_town({**row('שיטים'), 'locality_type': '510'}))
+
+    def test_sawaid_humayra_village_is_a_town(self):
+        # CBS 942 is a recognised village; its tribe namesake (989) is type 460.
+        self.assertFalse(is_non_town({**row('סואעד (חמירה)'), 'locality_type': '450'}))
+        self.assertTrue(is_non_town({**row('סואעד (כמאנה) (שבט)'), 'locality_type': '460'}))
 
 
 class MappingTests(unittest.TestCase):
