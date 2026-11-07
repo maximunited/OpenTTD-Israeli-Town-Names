@@ -6,6 +6,7 @@ from urllib.parse import urlencode
 import json
 from cbs_http import read_json
 from cbs_pagination import collect_pages
+from review_rules import is_non_town
 
 URL = 'https://api.cbs.gov.il/Dictionary/geo/localities'
 PAGE_SIZE = 250
@@ -62,8 +63,10 @@ def refresh(path, year=None, fetch_page=request_page, minimum_records=500):
     snapshot = fetch_snapshot(year, fetch_page, minimum_records)
     old = {row['id']: row for row in previous['records']}
     new = {row['id']: row for row in snapshot['records']}
-    report = ['# CBS snapshot changes', '', 'Candidates only: missing records are NOT automatically obsolete.', '', f'Data year: {snapshot["data_year"]}', '']
+    report = ['# CBS snapshot changes', '', 'Candidates only: missing records are NOT automatically obsolete. Non-towns are not listed.', '', f'Data year: {snapshot["data_year"]}', '']
     for code in sorted(old.keys() | new.keys(), key=int):
+        if all(is_non_town(rows[code]) for rows in (old, new) if code in rows):
+            continue
         if code not in old:
             report.append(f'- NEW CANDIDATE {code}: {new[code]["name_heb"]} / {new[code]["name_eng"]}')
         elif code not in new:

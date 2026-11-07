@@ -1,10 +1,14 @@
 # Contributing
 
-- Keep Hebrew behavior and GRFID unchanged unless a deliberate compatibility change is discussed.
-- Add full-name English corrections to translation data, not a word-by-word transliterator.
-- Include the Hebrew name, preferred English spelling, source, and whether the change fixes a wrong entity or merely chooses a spelling variant.
-- Do not claim every cached label is verified. Record unresolved names instead of guessing.
-- Run `python -m unittest discover -s tests -v` and compile affected GRFs before submitting changes.
+- Keep the Hebrew GRF ID (`ZH\01\01`) unchanged; it belongs to the original BaNaNaS package.
+  Never change a published GRF ID.
+- Add full-name English corrections to the JSON data files, not a word-by-word transliterator.
+- For a spelling change, include the Hebrew name, the preferred English spelling, a source,
+  and whether it fixes a wrong place or only picks a spelling variant.
+- Only real towns and villages belong in `israel.nml`; see [docs/NAME_DATA.md](docs/NAME_DATA.md).
+- Changing the town list or any English name needs a version bump
+  ([docs/PUBLISHING.md](docs/PUBLISHING.md)).
+- Run `python -m unittest discover -s tests` and `python build.py` before submitting.
 - Add regression tests for parser changes, especially escaped quotes and comments.
-- Do not commit compiled GRFs, personal caches, credentials, or generated review reports.
-- Clarify upstream and dataset licensing before distributing a release.
+- Do not commit compiled GRFs, `dist/`, credentials or generated review reports.
+- Contributions are licensed under GPL v2.
