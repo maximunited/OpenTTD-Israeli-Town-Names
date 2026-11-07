@@ -60,7 +60,7 @@ def package(variant, grf, release, dist, base=BASE):
         encoding='utf-8',
     )
     shutil.copyfile(base / 'CHANGELOG.md', folder / 'changelog.txt')
-    shutil.copyfile(base / 'LICENSE', folder / 'license.txt')
+    # No license.txt: BaNaNaS rejects it for GPL v2 and supplies the license text itself.
     archive = dist / f'{folder.name}.zip'
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as handle:
         for path in sorted(folder.iterdir()):

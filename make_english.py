@@ -123,6 +123,7 @@ def generate_bilingual(source, translations):
     entries = [(decode(m[1]), m[2]) for m in TEXT.finditer(strip_comments(source))]
     header = (
         f'grf {{\n\t{BILINGUAL_GRFID}\n\tname: string(STR_GRF_NAME);\n\tdesc: string(STR_GRF_DESCRIPTION);\n'
+        f'\turl: string(STR_GRF_URL);\n'
         f'\tversion: {version};\n\tmin_compatible_version: {minimum};\n}}\n'
     )
     return '\n'.join([

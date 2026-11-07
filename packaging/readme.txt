@@ -12,6 +12,6 @@ Hebrew letters show as boxes or question marks?
 Open Game Options > Graphics and turn off "Use traditional sprite font",
 so OpenTTD uses a system font that has Hebrew letters.
 
-License: GPL v2 (see license.txt).
+License: GPL v2.
 Source, issues and changes: {url}
 Original Hebrew name set by ZvikaZ: https://github.com/ZvikaZ/OpenTTD-Israeli-Town-Names

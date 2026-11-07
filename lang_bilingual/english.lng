@@ -1,6 +1,7 @@
 ##grflangid 0x01
 
 STR_GRF_NAME :Israeli Town Names (Hebrew + English) {VERSION}
-STR_GRF_DESCRIPTION :Israeli town names in Hebrew and English: two town name styles in one NewGRF. License: GPL v2.
+STR_GRF_DESCRIPTION :Real Israeli town names: over 1,100 cities, towns, kibbutzim, moshavim and villages. Two town name styles: Hebrew and English.
+STR_GRF_URL :https://github.com/maximunited/OpenTTD-Israeli-Town-Names
 STR_STYLE_HEBREW :Israeli (Hebrew)
 STR_STYLE_ENGLISH :Israeli (English)

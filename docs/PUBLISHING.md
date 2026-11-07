@@ -79,9 +79,8 @@ On Linux/macOS use `.venv/bin/python`. The output goes to `dist/`:
 dist/
   israeli_town_names_bilingual-0.2.0/   <- the files to upload
     israeli_town_names_bilingual.grf
-    readme.txt       (shown in-game)
-    changelog.txt    (shown in-game)
-    license.txt      (shown in-game)
+    readme.txt       (in-game "Readme" button)
+    changelog.txt    (in-game "Changelog" button)
   israeli_town_names_bilingual-0.2.0.zip
   ...same for english and hebrew
   release-notes.md
@@ -125,8 +124,10 @@ three zips attached. Use those zips for the upload below.
 ## 6. Upload to BaNaNaS
 
 1. Go to https://bananas.openttd.org/manager and choose **Login via GitHub**.
-2. Start a new upload and add the **four files** from the variant's folder:
-   the `.grf`, `readme.txt`, `changelog.txt` and `license.txt`.
+2. Start a new upload and add the **three files** from the variant's folder:
+   the `.grf`, `readme.txt` and `changelog.txt`. Do not add a license file:
+   BaNaNaS rejects `license.txt` when GPL v2 is selected and adds the GPL v2
+   text itself (that is what the in-game "License" button shows).
 3. BaNaNaS reads the GRF and recognises the package by its GRF ID.
    - First upload of a GRF ID: a new package is created.
    - Later uploads with the same GRF ID: a new version of your package.
@@ -142,12 +143,23 @@ The site's labels may differ slightly from these steps; the fields are the same.
 | Name | Israeli Town Names (English) | Israeli Town Names (Hebrew + English) |
 | Version | same as `custom_tags.txt`, e.g. `0.2.0` | same |
 | License | GPL v2 | GPL v2 |
-| Description | Real Israeli town names in English, based on the original Hebrew set by ZvikaZ. | Real Israeli town names with two town name styles: Hebrew and English. Based on the original Hebrew set by ZvikaZ. |
+| Description | Real Israeli town names in English: over 1,100 cities, towns, kibbutzim, moshavim and villages. Based on the original Hebrew set by ZvikaZ. | Real Israeli town names: over 1,100 cities, towns, kibbutzim, moshavim and villages. Two town name styles: Hebrew and English. Based on the original Hebrew set by ZvikaZ. |
 | URL | https://github.com/maximunited/OpenTTD-Israeli-Town-Names | same |
-| Tags | `town names`, `israel` | `town names`, `israel`, `hebrew` |
-| Region | Israel (if offered) | Israel (if offered) |
+| Region | `IL` (Israel) | `IL` (Israel) |
 | Compatibility | leave the default | leave the default |
 | Dependencies | none | none |
+
+About tags: BaNaNaS has no free-text tags. The tags players see are added
+automatically. `townname` and `8bpp` come from scanning the GRF; `israel`,
+`western asia` and `asia` come from the Region `IL` (UN region hierarchy).
+"Middle East" is not one of those regions, so it cannot be added.
+
+About the "Website" button: there are two. The one in **NewGRF Settings**
+comes from the URL built into the GRF (`STR_GRF_URL` in the `lang*` folders).
+The one in **Online Content** comes from the URL field above.
+
+For the Hebrew package, suggest this to ZvikaZ: *Real Israeli town names in
+Hebrew: over 1,100 cities, towns, kibbutzim, moshavim and villages.*
 
 Rules:
 
